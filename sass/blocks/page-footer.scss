@@ -1,0 +1,26 @@
+.page-footer {
+  background-color: $bg-white;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-top: 40px;
+  margin-left: 86px;
+}
+
+.page-footer__copyright {
+  margin-bottom: 40px;
+}
+
+.page-footer__copyright-text {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 46px;
+  margin-left: 94px;
+  @include text($open, 14px, 18px, $text-gray)
+}
+
+.page-footer__logo-academy {
+  margin-top: 40px;
+  margin-left: 8px;
+}

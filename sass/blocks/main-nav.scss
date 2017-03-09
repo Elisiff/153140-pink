@@ -1,0 +1,36 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__opener {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 20px;
+  background-color: rgba(0,0,0,0.3);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 176px;
+    right: 0;
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+  }
+}
+
+.main-nav__open {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 20px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.main-nav__items {
+  @include text($open-b, 18px, 32px, $text-white);
+  list-style: none;
+  text-transform: uppercase;
+
+  // Скрыть меню
+  // display: none;
+}

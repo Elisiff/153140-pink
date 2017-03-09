@@ -1,0 +1,30 @@
+.contacts-list {
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.contacts-list__questions {
+  padding-top: 17px;
+  @include text($open-l, 24px, 30px, $text-gray);
+}
+
+.contacts-list__wrapper {
+  padding: 0;
+  padding-top: 6px;
+  list-style: none;
+}
+
+.contacts-list__contacts {
+  padding-bottom: 18px;
+}
+
+.contacts-list__contact-title {
+  @include text($open-b, 18px, 30px, $text-gray);
+}
+
+.contacts-list__contact-description {
+  margin: 0;
+  @include text($open-l, 24px, 30px, $text-pink);
+}

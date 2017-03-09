@@ -1,0 +1,137 @@
+.price-list {
+  padding-top: 91px;
+  background-color: $bg-gray;
+}
+
+.price-list-btn {
+  display: none;
+}
+
+.price-list__slide {
+  display: none;
+  border-spacing: 0;
+}
+
+.price-list__empty-header {
+  width: 20px;
+  font-size: 0;
+  background-color: $bg-nav;
+}
+
+.price-list__package {
+  position: relative;
+  width: 145px;
+  padding: 17px 68px 20px 68px;
+  text-align: center;
+  background-color: $bg-nav;
+  border-right: 2px solid $table-b;
+  border-left: 2px solid $table-b;
+}
+
+.price-list__package-title {
+  @include text($open-b, 18px, 30px, $text-white);
+  text-transform: uppercase;
+}
+
+.price-list__package-price {
+  margin: 0;
+  margin-top: 2px;
+  @include text($open-l, 24px, 30px, $text-white);
+}
+
+.price-list__package-hit {
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  @include text($open-b, 14px, 30px, $text-white);
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -21px;
+    width: 74px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: 74px 73px;
+    z-index: -10;
+    transform: rotate(45deg);
+  }
+}
+
+.price-list__empty-main {
+  width: 20px;
+  font-size: 0;
+  background-color: $bg-white;
+  border-bottom: 2px solid $table-b;
+}
+
+.price-list__condition {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 17px 14px 22px;
+  @include text($open, 14px, 30px, $text-gray);
+  text-transform: uppercase;
+  background-color: $bg-white;
+  border-right: 2px solid $table-b;
+  border-left: 2px solid $table-b;
+  border-bottom: 2px solid $table-b;
+
+  span {
+    display: block;
+    width: 140px;
+  }
+}
+
+.price-list__logo {
+  display: block;
+  padding-top: 3px;
+}
+
+#price-list-btn-1:checked~.price-list__slide-1 {
+  display: block;
+}
+
+#price-list-btn-2:checked~.price-list__slide-2 {
+  display: block;
+}
+
+#price-list-btn-3:checked~.price-list__slide-3 {
+  display: block;
+}
+
+.price-list__slider-controls {
+  position: relative;
+  text-align: center;
+  margin-top: 42px;
+  padding-bottom: 37px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 25px;
+    top: -417px;
+    left: 0;
+    background-image: url(../img/bg-triangle-white.svg);
+    background-repeat: no-repeat;
+    background-size: 320px 25px;
+  }
+}
+
+.price-list__slider-control {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 15px;
+  vertical-align: top;
+  background-color: #bec2c7;
+  border-radius: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

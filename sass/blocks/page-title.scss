@@ -1,0 +1,6 @@
+.page-title {
+  min-height: 141px;
+  padding: 7px 20px 0 20px;
+  @include text($open-l, 24px, 30px, $text-white);
+  text-align: center;
+}
