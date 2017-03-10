@@ -1,11 +1,15 @@
 .page-footer {
   background-color: $bg-white;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
 }
 
 .page-footer__logo {
   display: block;
   margin-top: 40px;
-  margin-left: 86px;
+  margin-left: 66px;
 }
 
 .page-footer__copyright {
@@ -16,7 +20,7 @@
   display: inline-block;
   vertical-align: top;
   margin-top: 46px;
-  margin-left: 94px;
+  margin-left: 74px;
   @include text($open, 14px, 18px, $text-gray)
 }
 

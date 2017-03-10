@@ -1,6 +1,12 @@
 .reviews {
   background-color: $bg-white;
-  text-align: center;
+}
+
+.reviews__container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
 }
 
 .reviews-btn {
@@ -9,9 +15,8 @@
 
 .reviews__slide {
   display: none;
-  margin-top: 41px;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-top: 42px;
+  text-align: center;
 }
 
 .reviews__slide-title {
@@ -35,7 +40,8 @@
 }
 
 .reviews__slider-controls {
-  margin-top: 40px;
+  text-align: center;
+  margin-top: 39px;
   margin-bottom: 30px;
 }
 

@@ -1,6 +1,25 @@
 .price-list {
-  padding-top: 91px;
   background-color: $bg-gray;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2086px;
+    left: 0;
+    width: 740px;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 740px auto;
+  }
+}
+
+.price-list__container {
+  margin: 0 auto;
+  padding-top: 93px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
 }
 
 .price-list-btn {
@@ -9,6 +28,8 @@
 
 .price-list__slide {
   display: none;
+  margin-left: -20px;
+  margin-right: -20px;
   border-spacing: 0;
 }
 
@@ -72,7 +93,7 @@
 .price-list__condition {
   display: flex;
   justify-content: space-between;
-  padding: 16px 17px 14px 22px;
+  padding: 15px 17px 14px 22px;
   @include text($open, 14px, 30px, $text-gray);
   text-transform: uppercase;
   background-color: $bg-white;
@@ -106,20 +127,8 @@
 .price-list__slider-controls {
   position: relative;
   text-align: center;
-  margin-top: 42px;
-  padding-bottom: 37px;
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 25px;
-    top: -417px;
-    left: 0;
-    background-image: url(../img/bg-triangle-white.svg);
-    background-repeat: no-repeat;
-    background-size: 320px 25px;
-  }
+  margin-top: 44px;
+  padding-bottom: 39px;
 }
 
 .price-list__slider-control {

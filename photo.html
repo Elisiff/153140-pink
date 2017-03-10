@@ -9,29 +9,30 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
+
+    <!-- Навигация -->
+    <nav class="main-nav">
+      <div class="main-nav__open">
+        <a class="main-nav__logo-wrapper" href="index.html">
+          <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" alt="Pink">
+        </a>
+        <button type="button" class="main-nav__toggle">
+          Открыть меню
+        </button>
+      </div>
+      <ul class="main-nav__items">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item  main-nav__item--active"><a>Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+      </ul>
+    </nav>
+
     <!-- Header -->
-    <header class="page-header">
+    <header class="page-header  page-header--other">
       <h1 class="project-title">
         Pink — приложение для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </h1>
-
-      <!-- Навигация -->
-      <nav class="main-nav">
-        <div class="main-nav__open">
-          <a class="main-nav__logo-wrapper" href="index.html">
-            <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" alt="Pink">
-          </a>
-          <button type="button" class="main-nav__toggle">
-            Открыть меню
-          </button>
-        </div>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item  main-nav__item--active"><a>Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
-        </ul>
-      </nav>
 
       <h2 class="page-title">Фотографии пользователей</h2>
     </header>
@@ -152,29 +153,31 @@
 
       <!-- Инструмент обработки изображения -->
       <form action="https://echo.htmlacademy.ru" class="image-tool" method="post">
-        <div class="image-tool__wrapper">
-          <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Изображение" class="image-tool__image">
-          <input class="image-tool__btn" type="radio" id="image-tool-btn-1" name="image-tool-filter" checked>
-          <input class="image-tool__btn" type="radio" id="image-tool-btn-2" name="image-tool-filter">
-          <input class="image-tool__btn" type="radio" id="image-tool-btn-3" name="image-tool-filter">
-          <div class="image-tool__filters">
-            <label class="image-tool__filter  image-tool__filter--framing" for="image-tool-btn-1">Кадрирование</label>
-            <label class="image-tool__filter  image-tool__filter--degradation" for="image-tool-btn-2">Размытие</label>
-            <label class="image-tool__filter  image-tool__filter--contrast" for="image-tool-btn-3">Контраст</label>
+        <div class="image-tool__container">
+          <div class="image-tool__wrapper">
+            <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Изображение" class="image-tool__image">
+            <input class="image-tool__btn" type="radio" id="image-tool-btn-1" name="image-tool-filter" checked>
+            <input class="image-tool__btn" type="radio" id="image-tool-btn-2" name="image-tool-filter">
+            <input class="image-tool__btn" type="radio" id="image-tool-btn-3" name="image-tool-filter">
+            <div class="image-tool__filters">
+              <label class="image-tool__filter  image-tool__filter--framing" for="image-tool-btn-1">Кадрирование</label>
+              <label class="image-tool__filter  image-tool__filter--degradation" for="image-tool-btn-2">Размытие</label>
+              <label class="image-tool__filter  image-tool__filter--contrast" for="image-tool-btn-3">Контраст</label>
+            </div>
+            <div class="image-tool__bar  image-tool__bar-framing">
+              <span class="image-tool__toggle"></span>
+            </div>
+            <div class="image-tool__bar  image-tool__bar-degradation">
+              <span class="image-tool__toggle"></span>
+            </div>
+            <div class="image-tool__bar  image-tool__bar-contrast">
+              <span class="image-tool__toggle"></span>
+            </div>
           </div>
-          <div class="image-tool__bar  image-tool__bar-framing">
-            <span class="image-tool__toggle"></span>
+          <div class="image-tool__btns">
+            <button class="image-tool__submit-btn  btn">Запостить</button>
+            <button type="reset" class="image-tool__reset-btn  btn">Отмена</button>
           </div>
-          <div class="image-tool__bar  image-tool__bar-degradation">
-            <span class="image-tool__toggle"></span>
-          </div>
-          <div class="image-tool__bar  image-tool__bar-contrast">
-            <span class="image-tool__toggle"></span>
-          </div>
-        </div>
-        <div class="image-tool__btns">
-          <button class="image-tool__submit-btn  btn">Запостить</button>
-          <button type="reset" class="image-tool__reset-btn  btn">Отмена</button>
         </div>
       </form>
     </main>

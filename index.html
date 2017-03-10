@@ -10,14 +10,8 @@
   </head>
   <body class="page">
 
-    <!-- Header -->
-    <header class="page-header  page-header--index">
-      <h1 class="project-title">
-        Pink — приложение для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </h1>
-
-      <!-- Навигация -->
-      <nav class="main-nav">
+    <!-- Навигация -->
+    <nav class="main-nav">
         <div class="main-nav__opener">
           <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" alt="Pink">
           <button type="button" class="main-nav__toggle">
@@ -30,7 +24,13 @@
           <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
         </ul>
-      </nav>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header  page-header--index">
+      <h1 class="project-title">
+        Pink — приложение для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </h1>
     </header>
 
     <!-- Main -->
@@ -38,181 +38,194 @@
 
       <!-- Скачать приложение -->
       <section class="download">
-        <a href="#" class="download__main-btn  btn">Скачать приложение</a>
-        <div class="download__btns">
-          <a href="#" class="download__btn  download__btn--iphone">iPhone</a>
-          <a href="#" class="download__btn  download__btn--android">Android</a>
-          <a href="#" class="download__btn  download__btn--win">Windows</a>
+        <div class="download__container">
+          <a href="#" class="download__main-btn  btn">Скачать приложение</a>
+          <div class="download__btns">
+            <a href="#" class="download__btn  download__btn--iphone">iPhone</a>
+            <a href="#" class="download__btn  download__btn--android">Android</a>
+            <a href="#" class="download__btn  download__btn--win">Windows</a>
+          </div>
+          <p class="download__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
         </div>
-        <p class="download__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
       </section>
 
       <!-- Преимущества -->
       <section class="advantages">
-        <p class="advantages__decription">
-          Устали от серости мегаполиса?
-        </p>
-        <p class="advantages__decription">
-          Нам есть что вам предложить!
-        </p>
-        <ul class="advantages__wrapper">
-          <li class="advantages__item  advantages__item--first">
-            <b class="advantages__item-title">Поднимает настроение</b>
-            <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <b class="advantages__item-title">Меняет мир вокруг</b>
-            <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item  advantages__item--last">
-            <b class="advantages__item-title">Заводит новых друзей</b>
-            <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="advantages__decription-wrapper">
+          <div class="advantages__decription-container">
+            <p class="advantages__decription">
+              Устали от серости мегаполиса?
+            </p>
+            <p class="advantages__decription">
+              Нам есть что вам предложить!
+            </p>
+          </div>
+        </div>
+
+        <div class="advantages__items-wrapper">
+          <ul class="advantages__items-container">
+            <li class="advantages__item  advantages__item--first">
+              <b class="advantages__item-title">Поднимает настроение</b>
+              <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <b class="advantages__item-title">Меняет мир вокруг</b>
+              <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item  advantages__item--last">
+              <b class="advantages__item-title">Заводит новых друзей</b>
+              <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Отзывы -->
       <section class="reviews">
-        <input class="reviews-btn" type="radio" id="reviews-btn-1" name="reviews-toggle" checked>
-        <input class="reviews-btn" type="radio" id="reviews-btn-2" name="reviews-toggle">
-        <input class="reviews-btn" type="radio" id="reviews-btn-3" name="reviews-toggle">
-        <div class="reviews__slide  reviews__slide-1">
-          <div class="reviews__slide-title">Николай Петров</div>
-          <p class="reviews__slide-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </div>
-        <div class="reviews__slide  reviews__slide-2">
-          <div class="reviews__slide-title">Петр Николаев</div>
-          <p class="reviews__slide-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </div>
-        <div class="reviews__slide  reviews__slide-3">
-          <div class="reviews__slide-title">Павел Петров</div>
-          <p class="reviews__slide-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </div>
-        <div class="reviews__slider-controls">
-          <label class="reviews__slider-control" for="reviews-btn-1"></label>
-          <label class="reviews__slider-control" for="reviews-btn-2"></label>
-          <label class="reviews__slider-control" for="reviews-btn-3"></label>
+        <div class="reviews__container">
+          <input class="reviews-btn" type="radio" id="reviews-btn-1" name="reviews-toggle" checked>
+          <input class="reviews-btn" type="radio" id="reviews-btn-2" name="reviews-toggle">
+          <input class="reviews-btn" type="radio" id="reviews-btn-3" name="reviews-toggle">
+          <div class="reviews__slide  reviews__slide-1">
+            <div class="reviews__slide-title">Николай Петров</div>
+            <p class="reviews__slide-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="reviews__slide  reviews__slide-2">
+            <div class="reviews__slide-title">Петр Николаев</div>
+            <p class="reviews__slide-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="reviews__slide  reviews__slide-3">
+            <div class="reviews__slide-title">Павел Петров</div>
+            <p class="reviews__slide-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="reviews__slider-controls">
+            <label class="reviews__slider-control" for="reviews-btn-1"></label>
+            <label class="reviews__slider-control" for="reviews-btn-2"></label>
+            <label class="reviews__slider-control" for="reviews-btn-3"></label>
+          </div>
         </div>
       </section>
 
       <!-- Цена -->
       <section class="price-list">
-        <input class="price-list-btn" type="radio" id="price-list-btn-1" name="price-list-toggle">
-        <input class="price-list-btn" type="radio" id="price-list-btn-2" name="price-list-toggle" checked>
-        <input class="price-list-btn" type="radio" id="price-list-btn-3" name="price-list-toggle">
+        <div class="price-list__container">
+          <input class="price-list-btn" type="radio" id="price-list-btn-1" name="price-list-toggle">
+          <input class="price-list-btn" type="radio" id="price-list-btn-2" name="price-list-toggle" checked>
+          <input class="price-list-btn" type="radio" id="price-list-btn-3" name="price-list-toggle">
 
-        <table class="price-list__slide  price-list__slide-1">
-          <tr>
-            <td class="price-list__empty-header"></td>
-            <td class="price-list__package">
-              <b class="price-list__package-title">Мини</b>
-              <p class="price-list__package-price">3,99 USD</p>
-            </td>
-            <td class="price-list__empty-header"></td>
-          </tr>
-          <tr>
-            <td class="price-list__empty-main"></td>
-            <td class="price-list__condition">
-              <span>Розовый фильтр</span>
-              <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
-            </td>
-            <td class="price-list__empty-main"></td>
-          </tr>
-          <tr>
-            <td class="price-list__empty-main"></td>
-            <td class="price-list__condition">
-              Смайлики
-              <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
-            </td>
-            <td class="price-list__empty-main"></td>
-          </tr>
-          <tr>
-            <td class="price-list__empty-main"></td>
-            <td class="price-list__condition">
-              Комментарии
-              <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
-            </td>
-            <td class="price-list__empty-main"></td>
-          </tr>
-        </table>
+          <table class="price-list__slide  price-list__slide-1">
+            <tr>
+              <td class="price-list__empty-header"></td>
+              <td class="price-list__package">
+                <b class="price-list__package-title">Мини</b>
+                <p class="price-list__package-price">3,99 USD</p>
+              </td>
+              <td class="price-list__empty-header"></td>
+            </tr>
+            <tr>
+              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                <span>Розовый фильтр</span>
+                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
+              </td>
+              <td class="price-list__empty-main"></td>
+            </tr>
+            <tr>
+              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                Смайлики
+                <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
+              </td>
+              <td class="price-list__empty-main"></td>
+            </tr>
+            <tr>
+              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                Комментарии
+                <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
+              </td>
+              <td class="price-list__empty-main"></td>
+            </tr>
+          </table>
 
-        <table class="price-list__slide  price-list__slide-2">
-          <tr>
-            <td class="price-list__empty-header"></td>
-            <td class="price-list__package">
-              <div class="price-list__package-hit">Хит</div>
-              <b class="price-list__package-title">Стандарт</b>
-              <p class="price-list__package-price">3,99 USD</p>
-            </td>
-            <td class="price-list__empty-header"></td>
-          </tr>
-          <tr>
-            <td class="price-list__empty-main"></td>
-            <td class="price-list__condition">
-              Розовый фильтр
-              <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
-            </td>
-            <td class="price-list__empty-main"></td>
-          </tr>
-          <tr>
-            <td class="price-list__empty-main"></td>
-            <td class="price-list__condition">
-              Смайлики
-              <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
-            </td>
-            <td class="price-list__empty-main"></td>
-          </tr>
-          <tr>
-            <td class="price-list__empty-main"></td>
-            <td class="price-list__condition">
-              Комментарии
-              <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
-            </td>
-            <td class="price-list__empty-main"></td>
-          </tr>
-        </table>
+          <table class="price-list__slide  price-list__slide-2">
+            <tr>
+              <td class="price-list__empty-header"></td>
+              <td class="price-list__package">
+                <div class="price-list__package-hit">Хит</div>
+                <b class="price-list__package-title">Стандарт</b>
+                <p class="price-list__package-price">3,99 USD</p>
+              </td>
+              <td class="price-list__empty-header"></td>
+            </tr>
+            <tr>
+              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                Розовый фильтр
+                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
+              </td>
+              <td class="price-list__empty-main"></td>
+            </tr>
+            <tr>
+              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                Смайлики
+                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
+              </td>
+              <td class="price-list__empty-main"></td>
+            </tr>
+            <tr>
+              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                Комментарии
+                <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
+              </td>
+              <td class="price-list__empty-main"></td>
+            </tr>
+          </table>
 
-        <table class="price-list__slide  price-list__slide-3">
-          <tr>
-            <td class="price-list__empty-header"></td>
-            <td class="price-list__package">
-              <b class="price-list__package-title">Премиум</b>
-              <p class="price-list__package-price">3,99 USD</p>
-            </td>
-            <td class="price-list__empty-header"></td>
-          </tr>
-          <tr>
-            <td class="price-list__empty-main"></td>
-            <td class="price-list__condition">
-              Розовый фильтр
-              <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
-            </td>
-            <td class="price-list__empty-main"></td>
-          </tr>
-          <tr>
-            <td class="price-list__empty-main"></td>
-            <td class="price-list__condition">
-              Смайлики
-              <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
-            </td>
-            <td class="price-list__empty-main"></td>
-          </tr>
-          <tr>
-            <td class="price-list__empty-main"></td>
-            <td class="price-list__condition">
-              Комментарии
-              <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
-            </td>
-            <td class="price-list__empty-main"></td>
-          </tr>
-        </table>
+          <table class="price-list__slide  price-list__slide-3">
+            <tr>
+              <td class="price-list__empty-header"></td>
+              <td class="price-list__package">
+                <b class="price-list__package-title">Премиум</b>
+                <p class="price-list__package-price">3,99 USD</p>
+              </td>
+              <td class="price-list__empty-header"></td>
+            </tr>
+            <tr>
+              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                Розовый фильтр
+                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
+              </td>
+              <td class="price-list__empty-main"></td>
+            </tr>
+            <tr>
+              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                Смайлики
+                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
+              </td>
+              <td class="price-list__empty-main"></td>
+            </tr>
+            <tr>
+              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                Комментарии
+                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
+              </td>
+              <td class="price-list__empty-main"></td>
+            </tr>
+          </table>
 
-        <div class="price-list__slider-controls">
-          <label class="price-list__slider-control" for="price-list-btn-1"></label>
-          <label class="price-list__slider-control" for="price-list-btn-2"></label>
-          <label class="price-list__slider-control" for="price-list-btn-3"></label>
+          <div class="price-list__slider-controls">
+            <label class="price-list__slider-control" for="price-list-btn-1"></label>
+            <label class="price-list__slider-control" for="price-list-btn-2"></label>
+            <label class="price-list__slider-control" for="price-list-btn-3"></label>
+          </div>
         </div>
       </section>
     </main>
@@ -239,7 +252,9 @@
         </ul>
       </section>
       <section class="map" id="yandex-map">
-        <span class="map__marker"></span>
+        <div class="map__container">
+          <span class="map__marker"></span>
+        </div>
       </section>
     </footer>
   </body>

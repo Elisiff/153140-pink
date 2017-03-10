@@ -1,32 +1,37 @@
 .map {
-  position: relative;
-  height: 200px;
   background-color: $bg-white;
+}
+
+.map__container {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  margin: auto auto;
   background-image: url(../img/bg-map-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-size: 320px 645px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-image: url(../img/bg-triangle-white-footer.svg);
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+  }
 }
 
 .map__marker {
   position: absolute;
   width: 36px;
   height: 35px;
-  bottom: 70px;
+  bottom: 65px;
   left: 142px;
   background-image: url(../img/icon-map-marker.svg);
   background-repeat: no-repeat;
   background-size: 36px 35px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 35px;
-    top: -96px;
-    left: -142px;
-    background-image: url(../img/bg-triangle-white-footer.svg);
-    background-repeat: no-repeat;
-    background-size: 320px 35px;
-  }
 }

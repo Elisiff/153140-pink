@@ -10,28 +10,29 @@
   </head>
   <body class="page">
     <!-- Header -->
-    <header class="page-header">
+
+    <!-- Навигация -->
+    <nav class="main-nav">
+      <div class="main-nav__open">
+        <a class="main-nav__logo-wrapper" href="index.html">
+          <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" alt="Pink">
+        </a>
+        <button type="button" class="main-nav__toggle">
+          Открыть меню
+        </button>
+      </div>
+      <ul class="main-nav__items">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item  main-nav__item--active"><a>Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+      </ul>
+    </nav>
+
+    <header class="page-header  page-header--other">
       <h1 class="project-title">
         Pink — приложение для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </h1>
-
-      <!-- Навигация -->
-      <nav class="main-nav">
-        <div class="main-nav__open">
-          <a class="main-nav__logo-wrapper" href="index.html">
-            <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" alt="Pink">
-          </a>
-          <button type="button" class="main-nav__toggle">
-            Открыть меню
-          </button>
-        </div>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item  main-nav__item--active"><a>Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
-        </ul>
-      </nav>
 
       <h2 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </header>
@@ -57,69 +58,73 @@
 
         <!-- Достижения -->
         <div class="journey-form__achievements">
-          <h3 class="journey-form__achievements-title">
-            Ваши безбашенные достижения в путешествии
-          </h3>
-          <label class="journey-form__achievement">
-            <input type="checkbox" name="journey-form-shark" checked>
-            <span class="journey-form__indicator-checkbox"></span>
-            Сделал селфи с акулой
-          </label>
-          <label class="journey-form__achievement">
-            <input type="checkbox" name="journey-form-sunburn" checked>
-            <span class="journey-form__indicator-checkbox"></span>
-            Обгорел на пляже
-          </label>
-          <label class="journey-form__achievement">
-            <input type="checkbox" name="journey-form-norris">
-            <span class="journey-form__indicator-checkbox"></span>
-            Видел Чака Норриса
-          </label>
-          <label class="journey-form__achievement">
-            <input type="checkbox" name="journey-form-souvenirs">
-            <span class="journey-form__indicator-checkbox"></span>
-            Накупил сувениров
-          </label>
-          <label class="journey-form__achievement">
-            <input type="checkbox" name="journey-form-tower" checked>
-            <span class="journey-form__indicator-checkbox"></span>
-            Удержал башню
-          </label>
-          <label class="journey-form__achievement">
-            <input type="checkbox" name="journey-form-hotel">
-            <span class="journey-form__indicator-checkbox"></span>
-            Разгромил отель
-          </label>
+          <div class="journey-form__achievements-container">
+            <h3 class="journey-form__achievements-title">
+              Ваши безбашенные достижения в путешествии
+            </h3>
+            <label class="journey-form__achievement">
+              <input class="journey-form__checkbox" type="checkbox" name="journey-form-shark" checked>
+              <span class="journey-form__indicator-checkbox"></span>
+              Сделал селфи с акулой
+            </label>
+            <label class="journey-form__achievement">
+              <input class="journey-form__checkbox" type="checkbox" name="journey-form-sunburn" checked>
+              <span class="journey-form__indicator-checkbox"></span>
+              Обгорел на пляже
+            </label>
+            <label class="journey-form__achievement">
+              <input class="journey-form__checkbox" type="checkbox" name="journey-form-norris">
+              <span class="journey-form__indicator-checkbox"></span>
+              Видел Чака Норриса
+            </label>
+            <label class="journey-form__achievement">
+              <input class="journey-form__checkbox" type="checkbox" name="journey-form-souvenirs">
+              <span class="journey-form__indicator-checkbox"></span>
+              Накупил сувениров
+            </label>
+            <label class="journey-form__achievement">
+              <input class="journey-form__checkbox" type="checkbox" name="journey-form-tower" checked>
+              <span class="journey-form__indicator-checkbox"></span>
+              Удержал башню
+            </label>
+            <label class="journey-form__achievement">
+              <input class="journey-form__checkbox" type="checkbox" name="journey-form-hotel">
+              <span class="journey-form__indicator-checkbox"></span>
+              Разгромил отель
+            </label>
+          </div>
         </div>
 
         <!-- Контакты -->
         <div class="journey-form__contacts">
           <label class="journey-form__acquaintance-signature" for="journey-form-tel-field">Номер телефона</label>
           <input class="journey-form__acquaintance-input" type="tel" name="journey-form-tel" id="journey-form-tel-field" placeholder="Номер, пожалуйста">
-          <label class="journey-form__acquaintance-signature" for="journey-form-email-field">Адрес почты</label>
+          <label class="journey-form__acquaintance-signature" for="journey-form-email-field">Адресок почты</label>
           <input class="journey-form__acquaintance-input" type="email" name="journey-form-email" id="journey-form-email-field" placeholder="Введите почту *">
         </div>
 
         <!-- Приложение -->
         <div class="journey-form__application">
-          <h3 class="journey-form__application-title">
-            С каким приложением путешествовали?
-          </h3>
-          <label class="journey-form__application-wrapper">
-            <input type="radio" name="journey-form-application" value="ios" checked>
-            <span class="journey-form__indicator-radio"></span>
-            Pink для IOS
-          </label>
-          <label class="journey-form__application-wrapper">
-            <input type="radio" name="journey-form-application" value="android">
-            <span class="journey-form__indicator-radio"></span>
-            Pink на Android
-          </label>
-          <label class="journey-form__application-wrapper">
-            <input type="radio" name="journey-form-application" value="windows-phone">
-            <span class="journey-form__indicator-radio"></span>
-            Windows Phone
-          </label>
+          <div class="journey-form__application-container">
+            <h3 class="journey-form__application-title">
+              С каким приложением путешествовали?
+            </h3>
+            <label class="journey-form__application-wrapper">
+              <input class="journey-form__radio" type="radio" name="journey-form-application" value="ios" checked>
+              <span class="journey-form__indicator-radio"></span>
+              Pink для IOS
+            </label>
+            <label class="journey-form__application-wrapper">
+              <input class="journey-form__radio" type="radio" name="journey-form-application" value="android">
+              <span class="journey-form__indicator-radio"></span>
+              Pink на Android
+            </label>
+            <label class="journey-form__application-wrapper">
+              <input class="journey-form__radio" type="radio" name="journey-form-application" value="windows-phone">
+              <span class="journey-form__indicator-radio"></span>
+              Windows Phone
+            </label>
+          </div>
         </div>
 
         <!-- Финал -->
@@ -130,10 +135,12 @@
           <textarea class="journey-form__final-review" name="journey-form-emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
 
-        <button class="journey-form__submit-btn">Отправить форму</button>
-        <p class="journey-form__necessarily">
-          <span class="journey-form__star">*</span> — обязательные поля
-        </p>
+        <div class="journey-form__final-container">
+          <button class="journey-form__submit-btn">Отправить форму</button>
+          <p class="journey-form__necessarily">
+            <span class="journey-form__star">*</span> — обязательные поля
+          </p>
+        </div>
       </form>
     </main>
 

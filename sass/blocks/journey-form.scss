@@ -3,8 +3,10 @@
 }
 
 .journey-form__acquaintance {
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  width: 280px;
 }
 
 .journey-form__condition {
@@ -37,10 +39,16 @@
 
 .journey-form__achievements {
   margin-top: 25px;
+  padding-bottom: 47px;
+
+  background-color: $bg-gray;
+}
+
+.journey-form__achievements-container {
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 47px;
-  background-color: $bg-gray;
+  width: 280px;
 }
 
 .journey-form__achievements-title {
@@ -55,7 +63,9 @@
 
 .journey-form__achievement {
   display: block;
+  position: relative;
   margin-bottom: 52.5px;
+  padding-left: 69px;
   @include text($open, 18px, 30px, $text-gray);
 
   &:last-child {
@@ -63,22 +73,52 @@
   }
 }
 
+.journey-form__checkbox {
+  display: none;
+}
+
 .journey-form__indicator-checkbox {
-  margin-right: 52px;
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: -6px;
+  left: 0;
+  background-color: $bg-white;
+  border: 2px solid $table-b;
+  cursor: pointer;
+}
+
+.journey-form__checkbox:checked + .journey-form__indicator-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  z-index: 10;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-yes.svg")
 }
 
 .journey-form__contacts {
+  margin: 0 auto;
   padding-top: 32px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 280px;
 }
 
 .journey-form__application {
   margin-top: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 47px;
   background-color: $bg-gray;
+}
+
+.journey-form__application-container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
 }
 
 .journey-form__application-title {
@@ -93,7 +133,9 @@
 
 .journey-form__application-wrapper {
   display: block;
+  position: relative;
   margin-bottom: 46px;
+  padding-left: 69px;
   @include text($open, 18px, 30px, $text-gray);
 
   &:last-child {
@@ -101,13 +143,40 @@
   }
 }
 
+.journey-form__radio {
+  display: none;
+}
+
 .journey-form__indicator-radio {
-  margin-right: 52px;
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: -6px;
+  left: 0;
+  background-color: $bg-white;
+  border-radius: 50%;
+  border: 2px solid $table-b;
+  cursor: pointer;
+}
+
+.journey-form__radio:checked + .journey-form__indicator-radio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
 }
 
 .journey-form__final {
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  width: 280px;
 }
 
 .journey-form__final-title {
@@ -124,7 +193,7 @@
   box-sizing: border-box;
   min-height: 200px;
   width: 100%;
-  margin-bottom: 46px;
+  margin-bottom: 13px;
   resize: none;
   outline: none;
 
@@ -134,9 +203,15 @@
   }
 }
 
+.journey-form__final-container {
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+}
+
 .journey-form__submit-btn {
-  margin-right: 20px;
-  margin-left: 20px;
   margin-bottom: 36px;
   padding: 16px 45px 16px 46px;
   outline: none;
@@ -148,7 +223,7 @@
 
 .journey-form__necessarily {
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
   @include text($open, 14px, 30px, $text-gray);
   text-transform: uppercase;
   text-align: center;

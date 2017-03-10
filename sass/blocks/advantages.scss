@@ -1,53 +1,67 @@
 .advantages {
-  padding-top: 42px;
+  position: relative;
+}
+
+.advantages__decription-wrapper {
   background-color: $bg-white;
+}
+
+.advantages__decription-container {
+  margin: 0 auto;
+  padding-top: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
 }
 
 .advantages__decription {
   margin: 0;
-  margin-bottom: 32px;
-  padding: 0 50px;
+  margin-bottom: 32.5px;
+  padding: 0 30px;
   @include text($open-l, 24px, 27px, $text-gray);
   text-align: center;
 }
 
-.advantages__wrapper {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.advantages__items-wrapper {
   background-color: $bg-gray;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 212px;
+    left: 0;
+    width: 740px;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 740px auto;
+  }
+}
+
+.advantages__items-container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 286px;
+  width: 280px;
+  list-style: none;
 }
 
 .advantages__item {
-  padding: 0 30px 33px 30px;
+  margin: 0;
+  padding: 0 0 33px 0;
   text-align: center;
 
   &--first {
     padding-top: 86px;
   }
 
-  &--first::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 320px;
-    height: 32px;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-size: 400px auto;
-  }
-
-  &--last {
-    padding-bottom: 320px;
-  }
-
   &--last::after {
     content: "";
     position: absolute;
-    top: 512px;
-    left: 82px;
+    bottom: 0;
+    left: 83px;
     width: 157px;
     height: 277px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
