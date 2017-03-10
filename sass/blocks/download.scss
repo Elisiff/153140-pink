@@ -1,12 +1,11 @@
 .download {
   background-color: $bg-header;
-
 }
 
 .download__container {
   margin: 0 auto;
   padding: 27px 20px 18px 20px;
-  width: 280px;
+  max-width: 280px;
 }
 
 .download__main-btn {

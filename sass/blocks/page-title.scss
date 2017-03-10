@@ -1,5 +1,5 @@
 .page-title {
-  width: 280px;
+  max-width: 280px;
   margin: 0 auto;
   padding: 98px 20px 0 20px;
   @include text($open-l, 24px, 30px, $text-white);
