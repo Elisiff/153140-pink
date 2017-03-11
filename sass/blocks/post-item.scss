@@ -1,0 +1,42 @@
+.post-item {
+  margin-bottom: 21px;
+}
+
+.post-item__photo {
+  display: block;
+
+  &--panorama {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+.post-item__description {
+  margin-top: -20px;
+  padding: 20px 8px 21px 16px;
+  background-color: $bg-gray;
+}
+
+.post-item__user {
+  @include text($open-l, 12px, 24px, $text-gray);
+  text-transform: uppercase;
+}
+
+.post-item__user-name {
+  @include text($open-b, 14px, 24px, $text-gray);
+  text-transform: none;
+}
+
+.post-item__post {
+  margin: 0;
+  margin-top: -12px;
+  @include text($open, 14px, 24px, $text-gray);
+}
+
+.post-item__likes {
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 33px;
+  @include text($open, 12px, 24px, $text-pink);
+  text-transform: uppercase;
+}

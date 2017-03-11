@@ -1,0 +1,147 @@
+.price-list {
+  position: relative;
+  background-color: $bg-gray;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 740px;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 740px auto;
+  }
+}
+
+.price-list__container {
+  margin: 0 auto;
+  padding-top: 93px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+}
+
+.price-list-btn {
+  display: none;
+}
+
+.price-list__slide {
+  display: none;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-spacing: 0;
+}
+
+.price-list__empty-header {
+  width: 20px;
+  font-size: 0;
+  background-color: $bg-nav;
+}
+
+.price-list__package {
+  position: relative;
+  width: 145px;
+  padding: 17px 68px 20px 68px;
+  text-align: center;
+  background-color: $bg-nav;
+  border-right: 2px solid $table-b;
+  border-left: 2px solid $table-b;
+}
+
+.price-list__package-title {
+  @include text($open-b, 18px, 30px, $text-white);
+  text-transform: uppercase;
+}
+
+.price-list__package-price {
+  margin: 0;
+  margin-top: 2px;
+  @include text($open-l, 24px, 30px, $text-white);
+}
+
+.price-list__package-hit {
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  @include text($open-b, 14px, 30px, $text-white);
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -21px;
+    width: 74px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: 74px 73px;
+    z-index: -10;
+    transform: rotate(45deg);
+  }
+}
+
+.price-list__empty-main {
+  width: 20px;
+  font-size: 0;
+  background-color: $bg-white;
+  border-bottom: 2px solid $table-b;
+}
+
+.price-list__condition {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 17px 14px 22px;
+  @include text($open, 14px, 30px, $text-gray);
+  text-transform: uppercase;
+  background-color: $bg-white;
+  border-right: 2px solid $table-b;
+  border-left: 2px solid $table-b;
+  border-bottom: 2px solid $table-b;
+
+  span {
+    display: block;
+    width: 140px;
+  }
+}
+
+.price-list__logo {
+  display: block;
+  padding-top: 3px;
+}
+
+#price-list-btn-1:checked~.price-list__slide-1 {
+  display: block;
+}
+
+#price-list-btn-2:checked~.price-list__slide-2 {
+  display: block;
+}
+
+#price-list-btn-3:checked~.price-list__slide-3 {
+  display: block;
+}
+
+.price-list__slider-controls {
+  position: relative;
+  text-align: center;
+  margin-top: 44px;
+  padding-bottom: 39px;
+}
+
+.price-list__slider-control {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 15px;
+  vertical-align: top;
+  background-color: #bec2c7;
+  border-radius: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

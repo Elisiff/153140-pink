@@ -1,0 +1,32 @@
+.page-header {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat top center $bg-header;
+  margin-top: -68px;
+
+  &--index {
+    height: 462px;
+  }
+
+  &--other {
+    min-height: 238px;
+    margin-top: -71px;
+  }
+}
+
+.page-header__container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 176px;
+    left: 0;
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}

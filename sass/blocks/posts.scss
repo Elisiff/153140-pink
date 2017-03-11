@@ -1,0 +1,30 @@
+.posts {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+}
+
+.posts__about {
+  padding: 46px 12px 50px 12px;
+  @include text($open, 14px, 30px, $text-gray);
+  text-align: center;
+}
+
+.posts__panorama {
+  position: absolute;
+  top: 185px;
+  right: 20px;
+  padding: 5px 21px 6px 21px;
+  @include text($open-b, 12px, 24px, $text-white);
+  text-transform: uppercase;
+  background-color: $bg-pink;
+}
+
+.posts__instruction {
+  margin-top: 43px;
+  margin-bottom: 43px;
+  @include text($open, 14px, 30px, $text-gray);
+  text-align: center;
+}

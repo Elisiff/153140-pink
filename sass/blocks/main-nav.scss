@@ -1,0 +1,57 @@
+.main-nav {
+  position: relative;
+  background-color: rgba(0,0,0,0.3);
+  // border-bottom: 1px solid #000000;
+}
+
+.main-nav__opener {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 22px 20px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.main-nav__open {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 22px 20px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.main-nav__items {
+  z-index: 10;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  @include text($open-b, 18px, 32px, $text-white);
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  // Скрыть меню
+  // display: none;
+}
+
+.main-nav__item {
+  padding: 15.5px 20px;
+  background-color: $bg-nav;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+  text-decoration: none;
+
+  a:link {
+    @include text($open-b, 18px, 32px, $text-white);
+    text-decoration: none;
+  }
+
+  a:visited {
+    @include text($open-b, 18px, 32px, $text-white);
+    text-decoration: none;
+  }
+}
