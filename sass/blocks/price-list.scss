@@ -1,10 +1,11 @@
 .price-list {
+  position: relative;
   background-color: $bg-gray;
 
   &::before {
     content: "";
     position: absolute;
-    top: 2086px;
+    top: 0;
     left: 0;
     width: 740px;
     height: 100%;
