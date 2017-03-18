@@ -11,9 +11,11 @@
   <body class="page">
 
     <!-- Навигация -->
-    <nav class="main-nav">
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <div class="main-nav__container">
         <div class="main-nav__opener">
-          <img class="main-nav__logo" src="img/logo-pink-white-mobile.svg" alt="Pink">
+          <img class="main-nav__logo  main-nav__logo--mobile" src="img/logo-pink-white-mobile.svg" alt="Pink">
+          <img class="main-nav__logo  main-nav__logo--tablet" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
           <button type="button" class="main-nav__toggle">
             Открыть меню
           </button>
@@ -24,6 +26,7 @@
           <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
         </ul>
+      </div>
     </nav>
 
     <!-- Header -->
@@ -41,6 +44,9 @@
       <!-- Скачать приложение -->
       <section class="download">
         <div class="download__container">
+          <p class="download__slogan">
+            Взгляните на жизнь иначе!
+          </p>
           <a href="#" class="download__main-btn  btn">Скачать приложение</a>
           <div class="download__btns">
             <a href="#" class="download__btn  download__btn--iphone">iPhone</a>
@@ -84,6 +90,18 @@
         </div>
       </section>
 
+      <!-- Эффект -->
+      <section class="effect">
+        <div class="effect__container">
+          <div class="effect__wrapper">
+            <b class="effect__title">Эффект<br>
+            на 24 часа!</b>
+            <p class="effect__description">Британские ученые провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="#" class="effect__more">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+
       <!-- Отзывы -->
       <section class="reviews">
         <div class="reviews__container">
@@ -91,16 +109,19 @@
           <input class="reviews-btn" type="radio" id="reviews-btn-2" name="reviews-toggle">
           <input class="reviews-btn" type="radio" id="reviews-btn-3" name="reviews-toggle">
           <div class="reviews__slide  reviews__slide-1">
+            <p class="reviews__slide-title-info">25 лет, водитель трамвая</p>
             <div class="reviews__slide-title">Николай Петров</div>
-            <p class="reviews__slide-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <q class="reviews__slide-description">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
           </div>
           <div class="reviews__slide  reviews__slide-2">
+            <p class="reviews__slide-title-info">25 лет, водитель трамвая</p>
             <div class="reviews__slide-title">Петр Николаев</div>
-            <p class="reviews__slide-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <q class="reviews__slide-description">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
           </div>
           <div class="reviews__slide  reviews__slide-3">
+            <p class="reviews__slide-title-info">25 лет, водитель трамвая</p>
             <div class="reviews__slide-title">Павел Петров</div>
-            <p class="reviews__slide-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <q class="reviews__slide-description">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
           </div>
           <div class="reviews__slider-controls">
             <label class="reviews__slider-control" for="reviews-btn-1"></label>
@@ -121,8 +142,8 @@
             <tr>
               <td class="price-list__empty-header"></td>
               <td class="price-list__package">
-                <b class="price-list__package-title">Мини</b>
-                <p class="price-list__package-price">3,99 USD</p>
+                <b class="price-list__package-title">База</b>
+                <p class="price-list__package-price">1,99 USD</p>
               </td>
               <td class="price-list__empty-header"></td>
             </tr>
@@ -192,8 +213,8 @@
             <tr>
               <td class="price-list__empty-header"></td>
               <td class="price-list__package">
-                <b class="price-list__package-title">Премиум</b>
-                <p class="price-list__package-price">3,99 USD</p>
+                <b class="price-list__package-title">Анлим</b>
+                <p class="price-list__package-price">9,99 USD</p>
               </td>
               <td class="price-list__empty-header"></td>
             </tr>
@@ -259,5 +280,25 @@
         </div>
       </section>
     </footer>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+      </a>
+      <section class="social">
+        <a href="#" class="social__btn  social__btn--tw">Twitter</a>
+        <a href="#" class="social__btn  social__btn--fb">Facebook</a>
+        <a href="#" class="social__btn  social__btn--youtube">Youtube</a>
+      </section>
+      <section class="page-footer__copyright">
+        <p class="page-footer__copyright-text">
+          Разработано
+        </p>
+        <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Html academy" class="page-footer__logo-academy">
+      </section>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js">
+    </script>
   </body>
 </html>

@@ -16,25 +16,26 @@
 
 .advantages__decription {
   margin: 0;
-  margin-bottom: 32.5px;
   padding: 0 30px;
+  padding-bottom: 33px;
   @include text($open-l, 24px, 27px, $text-gray);
   text-align: center;
 }
 
 .advantages__items-wrapper {
   background-color: $bg-gray;
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: 212px;
-    left: 0;
-    width: 740px;
+    top: 0;
+    right: 0;
+    width: 660px;
     height: 100%;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-size: 740px auto;
+    background-size: 660px auto;
   }
 }
 
@@ -54,7 +55,8 @@
   text-align: center;
 
   &--first {
-    padding-top: 86px;
+    padding-top: 104px;
+    margin-top: -18px;
   }
 
   &--last::after {
@@ -77,4 +79,165 @@
   margin: 0;
   margin-top: 10px;
   @include text($open, 14px, 24px, $text-gray);
+}
+
+@media (min-width: 660px) {
+  .advantages__decription-container {
+    padding-top: 51px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 620px;
+  }
+
+  .advantages__decription {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3px;
+    @include text($open-l, 40px, 46px, $text-gray);
+
+    &:last-child {
+      padding: 0 48px 48px 48px;
+      margin: 0;
+    }
+  }
+
+  .advantages__items-wrapper {
+    min-width: 660px;
+
+    &::before {
+      width: 960px;
+      background-size: 960px auto;
+    }
+
+    .advantages__items-container {
+      padding-bottom: 5px;
+      max-width: 620px;
+    }
+  }
+
+  .advantages__item {
+    margin-left: 310px;
+    margin-right: -5px;
+    padding: 0 0 37px 0px;
+    text-align: left;
+
+    &--first {
+      padding-top: 76px;
+      margin-top: 0;
+    }
+
+    &--last::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 21px;
+      width: 268px;
+      height: 547px;
+      background-image: url("../my/iphone-screen3.png");
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .advantages__decription-container {
+    padding-top: 67px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 940px;
+  }
+
+  .advantages__decription {
+    margin-bottom: 0px;
+    @include text($open-l, 50px, 60px, $text-gray);
+
+    &:last-child {
+      padding: 0 110px 67px 110px;
+    }
+  }
+
+  .advantages__items-wrapper {
+    min-width: 960px;
+
+    &::before {
+      width: 100%;
+      background-size: 100%;
+    }
+
+    .advantages__items-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 940px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 0;
+    }
+  }
+
+  .advantages__item {
+    position: relative;
+    width: 245px;
+    margin-top: 310px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 57px 8px 28px 8px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: -20px;
+      z-index: 10;
+      width: 300px;
+      height: 7px;
+      background-image: url("../my/line-shadow.png");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 288px;
+      left: 37px;
+      width: 186px;
+      height: 299px;
+      background-image: url("../my/screen2.png");
+      background-repeat: no-repeat;
+      background-size: 186px 382px;
+    }
+
+    &--first::after {
+      content: "";
+      position: absolute;
+      bottom: 288px;
+      left: 37px;
+      width: 186px;
+      height: 299px;
+      background-image: url("../my/screen1.png");
+      background-repeat: no-repeat;
+      background-size: 186px 382px;
+    }
+
+    &--last::after {
+      content: "";
+      position: absolute;
+      bottom: 288px;
+      left: 37px;
+      width: 186px;
+      height: 299px;
+      background-image: url("../my/screen3.png");
+      background-repeat: no-repeat;
+      background-size: 186px 382px;
+    }
+  }
+
+  .advantages__item-title {
+    @include text($open-b, 30px, 30px);
+  }
+
+  .advantages__item-description {
+    margin: 0;
+    margin-top: 25px;
+    @include text($open, 18px, 30px, $text-gray);
+  }
 }

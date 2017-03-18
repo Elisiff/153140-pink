@@ -30,3 +30,70 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: 660px) {
+  .page-header {
+    background: url("../my/back-tablet@1x.jpg") top center / cover no-repeat $bg-header;
+    margin-top: -112px;
+
+    &--index {
+      height: 730px;
+    }
+
+    &--other {
+    min-height: 442px;
+    margin-top: -112px;
+    }
+  }
+
+  .page-header__container {
+    max-width: 660px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      width: 700px;
+      height: 545px;
+      background-image: url("../my/iphone-6 copy.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .page-header {
+    background: url("../my/back-desktop.jpg") top center / cover no-repeat $bg-header;
+    margin-top: -108px;
+
+    &--index {
+      height: 853px;
+    }
+
+    &--other {
+      min-height: 395px;
+      margin-top: -108px;
+    }
+  }
+
+  .page-header__container {
+    max-width: 940px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: $outline;
+
+    &::after {
+      top: none;
+      bottom: 0;
+      right: 0;
+      width: 940px;
+      height: 645px;
+      background-image: url("../my/iphone-6.png");
+      background-position: bottom left;
+
+      outline: $outline;
+    }
+  }
+}

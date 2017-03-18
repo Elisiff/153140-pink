@@ -6,12 +6,12 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 740px;
+    right: 0;
+    width: 660px;
     height: 100%;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-size: 740px auto;
+    background-size: 660px auto;
   }
 }
 
@@ -143,5 +143,44 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@media (min-width: 660px) {
+  .price-list {
+    min-width: 660px;
+
+    &::before {
+      width: 960px;
+      background-size: 960px auto;
+    }
+  }
+
+  .price-list__container {
+    margin-bottom: -95px;
+    padding-top: 93px;
+    max-width: 620px;
+
+    outline: $outline;
+  }
+}
+
+@media (min-width: 960px) {
+  .price-list {
+
+    &::before {
+      width: 100%;
+      background-size: 100%;
+    }
+  }
+
+  .price-list__container {
+    padding-bottom: 92px;
+    padding-top: 148px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 900px;
+
+    outline: $outline;
   }
 }

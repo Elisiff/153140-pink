@@ -1,4 +1,12 @@
 .page {
   width: auto;
-  max-width: 700px;
+  min-width: 320px;
+
+  @media (min-width: 660px) {
+  min-width: 660px;
+  }
+
+  @media (min-width: 960px) {
+  min-width: 960px;
+  }
 }
