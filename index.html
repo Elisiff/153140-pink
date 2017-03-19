@@ -138,10 +138,25 @@
           <input class="price-list-btn" type="radio" id="price-list-btn-2" name="price-list-toggle" checked>
           <input class="price-list-btn" type="radio" id="price-list-btn-3" name="price-list-toggle">
 
+          <table class="price-list__conditions">
+            <tr>
+              <td class="price-list__condition-empty"></td>
+            </tr>
+            <tr>
+              <td class="price-list__condition-full">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="price-list__condition-full">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="price-list__condition-full">Комментарии</td>
+            </tr>
+          </table>
+
           <table class="price-list__slide  price-list__slide-1">
             <tr>
               <td class="price-list__empty-header"></td>
-              <td class="price-list__package">
+              <td class="price-list__package" colspan="2">
                 <b class="price-list__package-title">База</b>
                 <p class="price-list__package-price">1,99 USD</p>
               </td>
@@ -149,24 +164,27 @@
             </tr>
             <tr>
               <td class="price-list__empty-main"></td>
-              <td class="price-list__condition">
-                <span>Розовый фильтр</span>
+              <td class="price-list__condition  price-list__condition--main">
+                <span>Розовый фильтр</span></td>
+              <td class="price-list__icon">
                 <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
               </td>
               <td class="price-list__empty-main"></td>
             </tr>
             <tr>
               <td class="price-list__empty-main"></td>
-              <td class="price-list__condition">
-                Смайлики
+              <td class="price-list__condition  price-list__condition--main">
+                Смайлики</td>
+              <td class="price-list__icon">
                 <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
               </td>
               <td class="price-list__empty-main"></td>
             </tr>
             <tr>
               <td class="price-list__empty-main"></td>
-              <td class="price-list__condition">
-                Комментарии
+              <td class="price-list__condition  price-list__condition--main">
+                Комментарии</td>
+              <td class="price-list__icon">
                 <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
               </td>
               <td class="price-list__empty-main"></td>
@@ -176,7 +194,7 @@
           <table class="price-list__slide  price-list__slide-2">
             <tr>
               <td class="price-list__empty-header"></td>
-              <td class="price-list__package">
+              <td class="price-list__package" colspan="2">
                 <div class="price-list__package-hit">Хит</div>
                 <b class="price-list__package-title">Стандарт</b>
                 <p class="price-list__package-price">3,99 USD</p>
@@ -186,7 +204,8 @@
             <tr>
               <td class="price-list__empty-main"></td>
               <td class="price-list__condition">
-                Розовый фильтр
+                Розовый фильтр</td>
+              <td class="price-list__icon">
                 <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
               </td>
               <td class="price-list__empty-main"></td>
@@ -194,7 +213,8 @@
             <tr>
               <td class="price-list__empty-main"></td>
               <td class="price-list__condition">
-                Смайлики
+                Смайлики</td>
+              <td class="price-list__icon">
                 <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
               </td>
               <td class="price-list__empty-main"></td>
@@ -202,7 +222,8 @@
             <tr>
               <td class="price-list__empty-main"></td>
               <td class="price-list__condition">
-                Комментарии
+                Комментарии</td>
+              <td class="price-list__icon">
                 <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
               </td>
               <td class="price-list__empty-main"></td>
@@ -212,7 +233,7 @@
           <table class="price-list__slide  price-list__slide-3">
             <tr>
               <td class="price-list__empty-header"></td>
-              <td class="price-list__package">
+              <td class="price-list__package" colspan="2">
                 <b class="price-list__package-title">Анлим</b>
                 <p class="price-list__package-price">9,99 USD</p>
               </td>
@@ -221,7 +242,8 @@
             <tr>
               <td class="price-list__empty-main"></td>
               <td class="price-list__condition">
-                Розовый фильтр
+                Розовый фильтр</td>
+              <td class="price-list__icon">
                 <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
               </td>
               <td class="price-list__empty-main"></td>
@@ -229,7 +251,8 @@
             <tr>
               <td class="price-list__empty-main"></td>
               <td class="price-list__condition">
-                Смайлики
+                Смайлики</td>
+              <td class="price-list__icon">
                 <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
               </td>
               <td class="price-list__empty-main"></td>
@@ -237,7 +260,8 @@
             <tr>
               <td class="price-list__empty-main"></td>
               <td class="price-list__condition">
-                Комментарии
+                Комментарии</td>
+              <td class="price-list__icon">
                 <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
               </td>
               <td class="price-list__empty-main"></td>
@@ -281,7 +305,7 @@
       </section>
     </footer>
 
-    <footer class="page-footer">
+    <footer class="page-footer  page-footer--index">
       <a class="page-footer__logo" href="index.html">
         <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
       </a>

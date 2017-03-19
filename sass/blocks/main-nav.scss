@@ -127,6 +127,10 @@
   border-bottom: 1px solid #000000;
   text-decoration: none;
 
+  &:first-child {
+    box-shadow: 0 -1px 0 #000000;
+  }
+
   a:link {
     @include text($open-b, 18px, 32px, $text-white);
     text-decoration: none;

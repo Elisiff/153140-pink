@@ -34,6 +34,10 @@
 
   .effect__title {
     @include text($open-b, 30px, 36px, #000000);
+
+    br {
+      display: block;
+    }
   }
 
   .effect__description {

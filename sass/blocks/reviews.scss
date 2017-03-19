@@ -28,6 +28,8 @@
 }
 
 .reviews__slide-description {
+  display: block;
+  padding-top: 12px;
   @include text($open, 14px, 30px, $text-gray);
 }
 
