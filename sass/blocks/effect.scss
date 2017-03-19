@@ -1,0 +1,106 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .effect {
+    display: block;
+  }
+
+  .effect__container {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .effect__wrapper {
+    position: relative;
+    padding-left: 310px;
+    padding-top: 96px;
+    text-align: left;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 238px;
+      height: 276px;
+      background-image: url("../my/24.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .effect__title {
+    @include text($open-b, 30px, 36px, #000000);
+
+    br {
+      display: block;
+    }
+  }
+
+  .effect__description {
+    margin: 0;
+    padding-top: 10px;
+    @include text($open, 14px, 24px, $text-gray);
+  }
+
+  .effect__more {
+    display: block;
+    padding-top: 11px;
+    @include text($open, 14px, 24px, $text-pink);
+  }
+}
+
+@media (min-width: 960px) {
+  .effect {
+    display: block;
+    background-color: $bg-gray;
+  }
+
+  .effect__container {
+    max-width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .effect__wrapper {
+    position: relative;
+    padding-left: 366px;
+    padding-top: 132px;
+    padding-bottom: 114px;
+    text-align: left;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 298px;
+      height: 345px;
+      background-image: url("../my/24-desc.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .effect__title {
+    @include text($open-b, 30px, 30px, #000000);
+
+    br {
+      display: none;
+    }
+  }
+
+  .effect__description {
+    margin: 0;
+    padding-top: 26px;
+    @include text($open, 18px, 30px, $text-gray);
+  }
+
+  .effect__more {
+    display: block;
+    padding-top: 31px;
+    @include text($open, 18px, 30px, $text-pink);
+  }
+}

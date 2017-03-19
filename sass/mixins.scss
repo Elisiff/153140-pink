@@ -5,3 +5,9 @@
   line-height: $line-height;
   color: $color;
 }
+
+// Абсолютное позиционирование
+@mixin pos($content: "", $position: absolute) {
+  content: $content;
+  position: $position;
+}

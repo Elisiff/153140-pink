@@ -31,3 +31,24 @@
     background-position: center center;
   }
 }
+
+@media (min-width: 660px) {
+  .social {
+    margin-top: 40px;
+    margin-left: 23px;
+  }
+}
+
+@media (min-width: 960px) {
+  .social {
+    margin-top: 74px;
+    margin-left: 25px;
+  }
+
+  .social__btn {
+
+    &--tw {
+      margin-left: 0;
+    }
+  }
+}

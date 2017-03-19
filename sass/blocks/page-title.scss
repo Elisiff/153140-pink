@@ -5,3 +5,27 @@
   @include text($open-l, 24px, 30px, $text-white);
   text-align: center;
 }
+
+br {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .page-title {
+    max-width: 620px;
+    padding: 180px 20px 0 20px;
+    @include text($open-l, 50px, 60px, $text-white);
+  }
+}
+
+@media (min-width: 960px) {
+  .page-title {
+    max-width: 960px;
+    padding: 172px 20px 0 20px;
+    @include text($open-l, 50px, 60px, $text-white);
+  }
+
+  br {
+    display: block;
+  }
+}
