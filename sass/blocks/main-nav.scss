@@ -171,7 +171,7 @@
   }
 }
 
- @media (min-width: 960px) {
+@media (min-width: 960px) {
   .main-nav__container {
     display: flex;
     box-sizing: border-box;
@@ -228,5 +228,4 @@
       @include text($open, 18px, 18px, $text-white);
     }
   }
-
- }
+}
