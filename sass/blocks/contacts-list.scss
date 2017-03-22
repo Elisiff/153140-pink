@@ -30,6 +30,26 @@
 .contacts-list__contact-description {
   margin: 0;
   @include text($open-l, 24px, 30px, $text-pink);
+
+  a {
+    text-decoration: none;
+    color: $text-pink;
+
+    &:link, &:visited {
+      text-decoration: none;
+      color: $text-pink;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: $text-gray;
+    }
+
+    &:active {
+      text-decoration: none;
+      color: rgba(40, 54, 69, 0.3);
+    }
+  }
 }
 
 @media (min-width: 660px) {

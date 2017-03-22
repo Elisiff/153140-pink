@@ -24,6 +24,18 @@
   white-space: nowrap;
   text-decoration: none;
   border: 3px solid $bg-white;
+
+  &:hover {
+    color: $text-pink;
+    background-color: $bg-white;
+    box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: $bg-white;
+    box-shadow: none;
+  }
 }
 
 .download__btns {

@@ -40,11 +40,47 @@
   box-sizing: border-box;
   width: 100%;
   margin-top: 5px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
+  padding: 15px 15px 15px 20px;
+  border: none;
+  border-radius: 1px;
+  box-shadow: 0 0 0 2px $table-b,
+              0 0 0 4px $bg-white;
+  @include text($open, 18px, 30px, $text-gray);
 
-  &[placeholder] {
-    padding: 15px 15px 15px 21px;
+  &::-webkit-input-placeholder {
+    padding: 15px 0 15px 0;
     @include text($open, 18px, 30px, $text-gray);
+  }
+
+  &::-moz-placeholder {
+    padding: 15px 0 15px 0;
+    @include text($open, 18px, 30px, $text-gray);
+  }
+
+  &:-moz-placeholder {
+    padding: 15px 0 15px 0;
+    @include text($open, 18px, 30px, $text-gray);
+  }
+
+  &:-ms-input-placeholder {
+    padding: 15px 0 15px 0;
+    @include text($open, 18px, 30px, $text-gray);
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 2px $bg-nav,
+                0 0 0 4px $bg-white;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 2px $bg-pink,
+              0 0 0 4px $bg-white;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $bg-pink,
+                0 0 0 4px $bg-white;
   }
 }
 
@@ -98,6 +134,14 @@
   background-color: $bg-white;
   border: 2px solid $table-b;
   cursor: pointer;
+
+  &:hover {
+    border: 2px solid $bg-nav;
+  }
+
+  &:active {
+    border: 2px solid $bg-pink;
+  }
 }
 
 .journey-form__checkbox:checked + .journey-form__indicator-checkbox::after {
@@ -173,6 +217,14 @@
   border-radius: 50%;
   border: 2px solid $table-b;
   cursor: pointer;
+
+  &:hover {
+    border: 2px solid $bg-nav;
+  }
+
+  &:active {
+    border: 2px solid $bg-pink;
+  }
 }
 
 .journey-form__radio:checked + .journey-form__indicator-radio::after {
@@ -188,6 +240,7 @@
 }
 
 .journey-form__final {
+  position: relative;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -208,13 +261,45 @@
   box-sizing: border-box;
   min-height: 200px;
   width: 100%;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
+  padding: 15px 15px 15px 20px;
+  border: none;
+  border-radius: 1px;
+  box-shadow: 0 0 0 2px $table-b,
+              0 0 0 4px $bg-white;
+  @include text($open, 18px, 30px, $text-gray);
   resize: none;
   outline: none;
 
-  &[placeholder] {
-    padding: 15px 15px 15px 21px;
+  &::-webkit-input-placeholder {
     @include text($open, 18px, 30px, $text-gray);
+  }
+
+  &::-moz-placeholder {
+    @include text($open, 18px, 30px, $text-gray);
+  }
+
+  &:-moz-placeholder {
+    @include text($open, 18px, 30px, $text-gray);
+  }
+
+  &:-ms-input-placeholder {
+    @include text($open, 18px, 30px, $text-gray);
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 2px $bg-nav,
+                0 0 0 4px $bg-white;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 2px $bg-pink,
+                0 0 0 4px $bg-white;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $bg-pink,
+                0 0 0 4px $bg-white;
   }
 }
 
@@ -234,6 +319,21 @@
   @include text($open-b, 18px, 30px, $text-white);
   text-transform: uppercase;
   background-color: $bg-btn;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $table-b;
+    color: $text-white;
+  }
 }
 
 .journey-form__necessarily {
@@ -277,7 +377,7 @@
     width: 620px;
     margin: 0;
     margin-left: -30px;
-    padding: 0 0 70px 0;
+    padding: 0 0 72px 0;
     @include text($open, 18px, 30px, $text-gray);
     text-align: center;
   }
@@ -300,7 +400,7 @@
     width: auto;
     min-width: 524px;
     margin-top: 0;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
   }
 
   .journey-form__application {
@@ -347,7 +447,7 @@
     order: 2;
     margin: 0 auto;
     padding-top: 0;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
     max-width: 620px;
   }
 
@@ -358,6 +458,7 @@
     z-index: 10;
     margin: 0 auto;
     padding: 10px 15px 39px 15px;
+    margin-bottom: 2px;
     background-color: $bg-white;
     @include text($open, 14px, 18px, $text-pink);
     text-align: center;
@@ -372,7 +473,7 @@
     padding-top: 48px;
     padding-bottom: 26px;
     padding-left: 60px;
-    padding-right: 120px;
+    padding-right: 60px;
     border: 2px solid $table-b;
 
     &::before {
@@ -381,7 +482,7 @@
       top: 48px;
       right: 60px;
       width: 60px;
-      height: 60px;
+      height: 59.5px;
       z-index: 10;
       background-color: #e5e5e5;
       background-image: url("../my/phone.svg");
@@ -420,14 +521,31 @@
     flex-grow: 1;
     position: relative;
     width: auto;
-    min-width: 430px;
+    min-width: 470px;
     box-sizing: border-box;
-    margin: 0 0 10px 0;
-    padding: 0;
-    padding-right: 65px;
+    margin: 0 0 12px 0;
+    padding: 15px 80px 15px 20px;
+    border: none;
+    box-shadow: 0 0 0 2px $table-b,
+              0 0 0 4px $bg-white;
 
-    &[placeholder] {
-      padding: 13px 15px 15px 17px;
+     &::-webkit-input-placeholder {
+      padding: 15px 0 15px 0;
+      @include text($open, 18px, 30px, $text-gray);
+    }
+
+    &::-moz-placeholder {
+      padding: 15px 0 15px 0;
+      @include text($open, 18px, 30px, $text-gray);
+    }
+
+    &:-moz-placeholder {
+      padding: 15px 0 15px 0;
+      @include text($open, 18px, 30px, $text-gray);
+    }
+
+    &:-ms-input-placeholder {
+      padding: 15px 0 15px 0;
       @include text($open, 18px, 30px, $text-gray);
     }
 
@@ -504,6 +622,7 @@
     width: 230px;
     z-index: 10;
     margin: 0 auto;
+    margin-bottom: 3px;
     padding: 5px 15px 30px 15px;
     background-color: $bg-white;
   }
@@ -511,7 +630,7 @@
   .journey-form__final-wrapper {
     margin-top: -48px;
     padding-top: 48px;
-    padding-bottom: 34px;
+    padding-bottom: 33px;
     padding-left: 60px;
     padding-right: 58px;
     border: 2px solid $table-b;
@@ -519,17 +638,14 @@
 
   .journey-form__final-review {
     box-sizing: border-box;
-    min-height: 192px;
+    min-height: 190px;
     width: 100%;
     margin-top: 0;
     margin-bottom: 13px;
+    padding: 15px 14px 15px 18px;
+    border: none;
     resize: none;
     outline: none;
-
-    &[placeholder] {
-      padding: 15px 15px 15px 15px;
-      @include text($open, 18px, 30px, $text-gray);
-    }
   }
 
   .journey-form__final-container {
@@ -608,8 +724,9 @@
     flex-grow: 1;
     width: auto;
     min-width: 336px;
-    margin-top: 0;
-    margin-bottom: 53px;
+    margin-top: 2px;
+    margin-bottom: 55px;
+    border: none;
 
     &:last-child {
       margin-bottom: 45px;
@@ -658,7 +775,7 @@
 
   .journey-form__contacts {
     max-width: 940px;
-    padding: 0 10px 40px 10px;
+    padding: 0 10px 38px 10px;
     margin-top: 0;
   }
 
@@ -672,18 +789,18 @@
     flex-wrap: wrap;
     margin-top: -41px;
     padding-top: 43px;
-    padding-bottom: 13px;
+    padding-bottom: 15px;
     padding-left: 60px;
-    padding-right: 120px;
+    padding-right: 60px;
     border: 2px solid $table-b;
 
     &::before {
       content: "";
       position: absolute;
-      top: 44px;
+      top: 43px;
       right: 504px;
       width: 60px;
-      height: 60px;
+      height: 59.5px;
       z-index: 10;
       background-color: #e5e5e5;
       background-image: url("../my/phone.svg");
@@ -694,10 +811,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 44px;
+      top: 43px;
       right: 60px;
       width: 60px;
-      height: 60px;
+      height: 59.5px;
       z-index: 10;
       background-color: #e5e5e5;
       background-image: url("../my/phone.svg");
@@ -708,7 +825,7 @@
 
   .journey-form__contacts-signature {
     order: 2;
-    width: 314px;
+    width: 373px;
     padding: 11px 18px 0 18px;
     margin-bottom: 0;
     box-sizing: border-box;
@@ -716,14 +833,30 @@
 
   .journey-form__contacts-input {
     flex-grow: 0;
-    width: 313px;
+    width: 373px;
     min-width: auto;
     box-sizing: border-box;
     margin: 0 0 0 0;
-    padding: 0;
+    padding: 15px 70px 15px 20px;
+    border: none;
 
-    &[placeholder] {
-      padding: 14px 15px 15px 17px;
+    &::-webkit-input-placeholder {
+      padding: 15px 0 15px 0;
+      @include text($open, 18px, 30px, $text-gray);
+    }
+
+    &::-moz-placeholder {
+      padding: 15px 0 15px 0;
+      @include text($open, 18px, 30px, $text-gray);
+    }
+
+    &:-moz-placeholder {
+      padding: 15px 0 15px 0;
+      @include text($open, 18px, 30px, $text-gray);
+    }
+
+    &:-ms-input-placeholder {
+      padding: 15px 0 15px 0;
       @include text($open, 18px, 30px, $text-gray);
     }
 
@@ -800,7 +933,7 @@
   .journey-form__final {
     width: 940px;
     max-width: 940px;
-    padding: 0 10px 20px 10px;
+    padding: 2px 10px 20px 10px;
   }
 
   .journey-form__final-title {
@@ -816,9 +949,10 @@
   }
 
   .journey-form__final-review {
-    min-height: 127px;
+    min-height: 125px;
     margin-top: -5px;
     margin-bottom: 13px;
+    border: none;
   }
 
   .journey-form__final-container {
