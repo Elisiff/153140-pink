@@ -529,7 +529,7 @@
     box-shadow: 0 0 0 2px $table-b,
               0 0 0 4px $bg-white;
 
-     &::-webkit-input-placeholder {
+    &::-webkit-input-placeholder {
       padding: 15px 0 15px 0;
       @include text($open, 18px, 30px, $text-gray);
     }
