@@ -65,7 +65,7 @@
 @media (min-width: 960px) {
   .page-header {
     background: url("../my/back-desktop.jpg") top center / cover no-repeat $bg-header;
-    margin-top: -108px;
+    margin-top: -118px;
 
     &--index {
       height: 853px;
@@ -73,27 +73,23 @@
 
     &--other {
       min-height: 395px;
-      margin-top: -108px;
+      margin-top: -118px;
     }
   }
 
   .page-header__container {
     max-width: 940px;
-    height: 100%;
+    height: auto;
     padding-left: 10px;
     padding-right: 10px;
-    outline: $outline;
 
     &::after {
-      top: none;
-      bottom: 0;
-      right: 0;
+      top: 209px;
+      left: 26px;
       width: 940px;
       height: 645px;
       background-image: url("../my/iphone-6.png");
       background-position: bottom left;
-
-      outline: $outline;
     }
   }
 }
