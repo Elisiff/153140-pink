@@ -14,6 +14,29 @@
   display: block;
   margin-top: 40px;
   margin-left: 66px;
+  cursor: pointer;
+}
+
+.page-footer__image {
+  width: 147px;
+  height: 40px;
+
+  &--desktop {
+    display: none;
+  }
+
+  &:hover .page-footer__image-recolor {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: auto;
+  }
+
+  &:active .page-footer__image-recolor {
+    fill: auto;
+  }
 }
 
 .page-footer__copyright {
@@ -30,7 +53,18 @@
 
 .page-footer__logo-academy {
   margin-top: 40px;
-  margin-left: 8px;
+  margin-left: 11px;
+  width: 27px;
+  height: 34px;
+  cursor: pointer;
+
+  &:hover .page-footer__logo-academy-part {
+    fill: #283645;
+  }
+
+  &:active .page-footer__logo-academy-part {
+    fill: #bec2c7;
+  }
 }
 
 @media (min-width: 660px) {
@@ -58,7 +92,7 @@
 
   .page-footer__logo-academy {
     margin-top: 50px;
-    margin-left: 8px;
+    margin-left: 9px;
   }
 }
 
@@ -75,6 +109,17 @@
   .page-footer__logo {
     margin-top: 71px;
     margin-left: 0px;
+  }
+
+  .page-footer__image {
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 
   .page-footer__copyright {

@@ -17,7 +17,7 @@
 
 .price-list__container {
   margin: 0 auto;
-  padding-top: 93px;
+  padding-top: 98px;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 280px;
@@ -96,7 +96,7 @@
 }
 
 .price-list__condition {
-  padding: 16px 17px 14px 20px;
+  padding: 15px 17px 14px 20px;
   @include text($open, 14px, 30px, $text-gray);
   text-transform: uppercase;
   background-color: $bg-white;
@@ -110,7 +110,7 @@
 }
 
 .price-list__icon {
-  padding: 16px 7px 14px 22px;
+  padding: 11px 1px 14px 22px;
   background-color: $bg-white;
   border-right: 2px solid $table-b;
   border-bottom: 2px solid $table-b;
@@ -136,8 +136,8 @@
 .price-list__slider-controls {
   position: relative;
   text-align: center;
-  margin-top: 44px;
-  padding-bottom: 39px;
+  margin-top: 43px;
+  padding-bottom: 37px;
 }
 
 .price-list__slider-control {
@@ -183,7 +183,7 @@
   .price-list__container {
     display: flex;
     margin-bottom: 0;
-    padding-top: 98px;
+    padding-top: 100px;
     padding-right: 20px;
     padding-bottom: 68px;
     max-width: 620px;
@@ -195,32 +195,29 @@
 
   .price-list__conditions {
     display: block;
-    width: 160px;
+    width: 159px;
     margin-left: 1px;
+    margin-top: 77px;
     box-sizing: border-box;
     border-spacing: 0;
     border-bottom: 2px solid $table-b;
-  }
-
-  .price-list__condition-empty {
-    width: 160px;
-    height: 77px;
-    visibility: hidden;
+    border-left: 2px solid $table-b;
+    border-right: 2px solid $table-b;
+    background-color: #ffffff;
   }
 
   .price-list__condition-full {
     width: 160px;
-    padding: 7px 5px 9px 14px;
+    min-height: 20px;
+    padding: 7px 5px 8px 14px;
     @include text($open, 14px, 30px, $text-gray);
     background-color: $bg-white;
-    border-left: 2px solid $table-b;
-    border-right: 2px solid $table-b;
     border-top: 2px solid $table-b;
   }
 
   .price-list__slide {
     display: block;
-    width: 155px;
+    width: 156px;
     box-sizing: border-box;
     margin: 0;
   }
@@ -235,11 +232,16 @@
 
   .price-list__package {
     position: relative;
-    width: 155px;
+    width: 156px;
     box-sizing: border-box;
-    padding: 11px 0 11px 0;
+    padding: 10px 0 9px 0;
     border-left: none;
     border-right: 2px solid $bg-gray;
+  }
+
+  .price-list__package-price {
+    padding: 0;
+    margin-top: 0;
   }
 
   .price-list__package-hit {
@@ -247,10 +249,11 @@
     left: 4px;
 
     &:before {
-      top: 0px;
-      left: -15px;
-      width: 55px;
-      height: 59px;
+      top: 1px;
+      left: -16px;
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/bg-hit-tablet.svg");
       background-size: 61px 61px;
       background-position: center center;
     }
@@ -297,7 +300,7 @@
 
   .price-list__container {
     padding-bottom: 94px;
-    padding-top: 171px;
+    padding-top: 187px;
     padding-left: 10px;
     padding-right: 10px;
     max-width: 940px;
@@ -306,16 +309,14 @@
   .price-list__conditions {
     width: 236px;
     margin-left: 0;
-  }
-
-  .price-list__condition-empty {
-    width: 236px;
-    height: 95px;
+    margin-top: 96px;
+    background-color: #ffffff;
   }
 
   .price-list__condition-full {
     width: 236px;
-    padding: 15px 5px 16px 21px;
+    min-height: 20px;
+    padding: 15px 5px 15px 21px;
     @include text($open, 18px, 30px, $text-gray);
   }
 
@@ -341,9 +342,10 @@
 
     &:before {
       top: -6px;
-      left: -20px;
+      left: -21px;
       width: 75px;
       height: 73px;
+      background-image: url("../img/bg-hit.svg");
       background-size: 75px 73px;
     }
   }

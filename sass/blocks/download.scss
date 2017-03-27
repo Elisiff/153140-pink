@@ -4,7 +4,7 @@
 
 .download__container {
   margin: 0 auto;
-  padding: 27px 20px 18px 20px;
+  padding: 27px 20px 15px 20px;
   max-width: 280px;
 }
 
@@ -19,7 +19,7 @@
 .download__main-btn {
   display: block;
   margin-bottom: 32px;
-  padding: 16px 35px 17px 35px;
+  padding: 15px 35px 17px 35px;
   color: $text-white;
   white-space: nowrap;
   text-decoration: none;
@@ -87,27 +87,28 @@
 
   .download__container {
     position: absolute;
-    bottom: 109px;
+    bottom: 108px;
     left: 0;
     min-width: 300px;
-    padding: 0 20px;
+    padding: 2px 20px 2px 20px;
     background-color: transparent;
   }
 
   .download__slogan {
     display: block;
+    padding-bottom: 27px;
   }
 
   .download__main-btn {
     display: block;
     margin-bottom: 43px;
-    padding: 16px 42px 17px 42px;
+    padding: 15px 42px 18px 46px;
   }
 
   .download__description {
     @include text($open-l, 18px, 24px, $text-white);
-    margin: 0 -5px;
-    padding-top: 31px;
+    margin: 0 -2px;
+    padding-top: 30px;
   }
 }
 
@@ -134,7 +135,7 @@
 
   .download__main-btn {
     margin-bottom: 65px;
-    padding: 15px 31px 18px 31px;
+    padding: 15px 31px 18px 30px;
     @include text($open-b, 21px, 18px, $text-white);
   }
 
