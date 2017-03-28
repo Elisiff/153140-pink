@@ -7,7 +7,7 @@
 }
 
 .photo__about {
-  padding: 46px 12px 50px 12px;
+  padding: 46px 12px 48px 12px;
   @include text($open, 14px, 30px, $text-gray);
   text-align: center;
 }
@@ -28,12 +28,13 @@
   }
 
   .photo__about {
-    padding: 93px 50px 76px 50px;
+    padding: 93px 50px 75px 50px;
     @include text($open, 18px, 30px, $text-gray);
   }
 
   .photo__panorama {
     top: 285px;
+    right: 18px;
   }
 }
 
@@ -44,7 +45,7 @@
   }
 
   .photo__about {
-    padding: 93px 150px 87px 150px;
+    padding: 93px 180px 87px 180px;
   }
 
   .photo__panorama {

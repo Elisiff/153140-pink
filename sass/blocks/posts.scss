@@ -7,8 +7,8 @@
 }
 
 .posts__instruction {
-  margin-top: 43px;
-  margin-bottom: 43px;
+  margin-top: 40px;
+  margin-bottom: 41px;
   @include text($open, 14px, 30px, $text-gray);
   text-align: center;
 
@@ -30,7 +30,7 @@
 
   .posts__instruction {
     margin-top: 45px;
-    margin-bottom: 69px;
+    margin-bottom: 68px;
     @include text($open, 18px, 30px, $text-gray);
   }
 }
@@ -42,7 +42,7 @@
   }
 
   .posts__instruction {
-    margin-top: 6px;
-    margin-bottom: 66px;
+    margin-top: 4px;
+    margin-bottom: 65px;
   }
 }

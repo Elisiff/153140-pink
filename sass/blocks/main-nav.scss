@@ -8,13 +8,31 @@
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  padding: 22px 20px;
+  padding: 23px 20px;
   max-width: 320px;
   margin: 0 auto;
 }
 
-.main-nav__logo--tablet {
-  display: none;
+.main-nav__logo {
+  width: 75px;
+  height: 22px;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  &:hover .main-nav__logo-recolor {
+    fill: #d22856;
+  }
+
+  &:active .main-nav__logo-recolor {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
 
 .main-nav__open {
@@ -22,7 +40,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  padding: 22px 20px;
+  padding: 22.5px 20px;
   max-width: 320px;
   margin: 0 auto;
 }
@@ -100,7 +118,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 8px;
     right: -4px;
     width: 30px;
     height: 5px;
@@ -168,7 +186,7 @@
 }
 
 .main-nav__item {
-  padding: 18px 20px 13px 20px;
+  padding: 16px 20px 14px 20px;
   background-color: $bg-nav;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
@@ -215,15 +233,17 @@
 @media (min-width: 660px) {
   .main-nav__opener {
     max-width: 660px;
-    padding: 27px 20px 40px 20px;
+    padding: 27px 20px 39px 20px;
   }
 
   .main-nav__open {
     max-width: 660px;
-    padding: 27px 20px 40px 20px;
+    padding: 27px 20px 39px 20px;
   }
 
   .main-nav__logo {
+    width: 147px;
+    height: 40px;
 
     &--mobile {
       display: none;
@@ -231,8 +251,6 @@
 
     &--tablet {
       display: block;
-      margin: 0;
-      padding: 0;
     }
   }
 
@@ -247,7 +265,7 @@
     box-sizing: border-box;
     width: 100%;
     max-width: 960px;
-    padding: 27px 10px 32px 10px;
+    padding: 27px 10px 24px 10px;
     margin: 0 auto;
   }
 
@@ -265,6 +283,19 @@
     max-width: 940px;
     width: 150px;
     margin: 0;
+  }
+
+  .main-nav__logo {
+    width: 147px;
+    height: 40px;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 
   .main-nav__toggle {
@@ -285,7 +316,7 @@
   }
 
   .main-nav__item {
-    padding: 18px 0px 13px 79px;
+    padding: 18px 0px 13px 80px;
     background-color: transparent;
     border-top: none;
     border-bottom: none;

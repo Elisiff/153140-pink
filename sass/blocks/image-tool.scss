@@ -28,6 +28,7 @@
   display: block;
   padding: 0 19px;
   background-position-x: 50%;
+  cursor: pointer;
 
   &--framing {
     width: 44px;
@@ -36,6 +37,14 @@
     background-image: url("../img/icon-editor-crop.svg");
     background-repeat: no-repeat;
     background-size: 44px 44px;
+
+    &:hover {
+      background-image: url("../img/icon-editor-crop-h.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-editor-crop-a.svg");
+    }
   }
 
   &--degradation {
@@ -44,7 +53,16 @@
     margin-top: 3px;
     background-image: url("../img/icon-editor-fill.svg");
     background-repeat: no-repeat;
-    background-size: 48px 43px;
+    background-size: 49px auto;
+    background-position: 14px -2px;
+
+    &:hover {
+      background-image: url("../img/icon-editor-fill-h.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-editor-fill-a.svg");
+    }
   }
 
   &--contrast {
@@ -54,6 +72,15 @@
     background-image: url("../img/icon-editor-contrast.svg");
     background-repeat: no-repeat;
     background-size: 32px 32px;
+    background-position: 15px 2px;
+
+    &:hover {
+      background-image: url("../img/icon-editor-contrast-h.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-editor-contrast-a.svg");
+    }
   }
 }
 
@@ -77,6 +104,11 @@
   background-repeat: no-repeat;
   background-size: 14px 14px;
   cursor: pointer;
+
+  &:active {
+    background-color: $bg-pink;
+    border-radius: 50%;
+  }
 }
 
 #image-tool-btn-1:checked~.image-tool__bars .image-tool__bar-framing {
@@ -117,7 +149,7 @@
 
 .image-tool__reset-btn {
   margin: 12px 20px 20px 20px;
-  padding: 16px 100px 17px 100px;
+  padding: 16px 100px 15px 100px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   background-color: $bg-gray;
   color: rgba(40, 54, 69, 0.1);
@@ -145,10 +177,11 @@
     max-width: 620px;
   }
 
-  .image-tool__image {
+  .image-tool__pic {
     display: block;
     width: 300px;
     height: 100%;
+    margin-top: -1px;
   }
 
   .image-tool__wrapper {
@@ -250,14 +283,14 @@
   .image-tool__submit-btn {
     margin: 0;
     margin-bottom: 24px;
-    padding: 16px 75px 17px 78px;
+    padding: 16px 78px 17px 78px;
     background-color: $bg-gray;
     color: $text-pink;
   }
 
   .image-tool__reset-btn {
     margin: 0;
-    padding: 16px 90px 17px 90px;
+    padding: 15px 92px 16px 90px;
     border: 3px solid #dddfe0;
     background-color: $bg-gray;
     color: #dddfe0;
@@ -268,7 +301,7 @@
   .image-tool {
     min-width: 960px;
     margin: 0 auto;
-    padding-bottom: 27px;
+    padding-bottom: 24px;
     background-color: $bg-white;
   }
 
