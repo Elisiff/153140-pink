@@ -6,12 +6,12 @@ let reviewsBtnOne = document.getElementById("reviews-btn-1");
 let reviewsBtnTwo = document.getElementById("reviews-btn-2");
 let reviewsBtnThree = document.getElementById("reviews-btn-3");
 let formSubmit = document.querySelector(".journey-form__submit-btn");
-let acqInput = document.querySelector(".journey-form__acquaintance-input--necessarily");
+let acqInput = document.querySelectorAll(".journey-form__acquaintance-input--necessarily");
 let popFailure = document.querySelector(".popup-failure");
 let popSuccess = document.querySelector(".popup-success");
 let popOverlay = document.querySelector(".popup-overlay");
-let popSuccessBtn = document.querySelector ("popup-success__btn");
-let popFailureBtn = document.querySelector ("popup-failure__btn");
+let popSuccessBtn = document.querySelector (".popup-success__btn");
+let popFailureBtn = document.querySelector (".popup-failure__btn");
 
 navMain.classList.remove("main-nav--nojs");
 
@@ -61,11 +61,20 @@ if (reviewsArrowLeft !== null) {
 //Запуск модальных окон
 if (formSubmit !== null) {
   formSubmit.addEventListener("click", function() {
-    if (acqInput.value === "") {
+
+    let triggerCount = acqInput.length; //Заводим переменную, которая равна количеству обязательных полей.
+
+    acqInput.forEach(reqInput => { //Когда находим непустое поле, уменьшаем значение этой переменной на единицу.
+      if (reqInput.value !== "") {
+        triggerCount--;
+      }
+    });
+
+    if (triggerCount > 0) { //Если переменная больше нуля, выводим окно о провале.
       popFailure.classList.remove("popup-failure--closed");
       popFailure.classList.add("popup-failure--show");
       popOverlay.classList.add("popup-overlay--show");
-    } else (acqInput.value !== "") {
+    } else {
       popSuccess.classList.remove("popup-success--closed");
       popSuccess.classList.add("popup-success--show");
       popOverlay.classList.add("popup-overlay--show");
@@ -74,16 +83,16 @@ if (formSubmit !== null) {
 }
 
 popSuccessBtn.addEventListener("click", function() {
-  if (popSuccess.contains("popup-success--show")) {
+  if (popSuccess.classList.contains("popup-success--show")) {
     popSuccess.classList.remove("popup-success--show");
-    popFailure.classList.add("popup-success--closed");
+    popSuccess.classList.add("popup-success--closed");
     popOverlay.classList.remove("popup-overlay--show");
   }
 });
 
-popFailureBtn.addEventListener("click", function()) {
-  if (popFailure.contains("popup-failure--show")) {
-    popSuccess.classList.remove("popup-failure--show");
+popFailureBtn.addEventListener("click", function() {
+  if (popFailure.classList.contains("popup-failure--show")) {
+    popFailure.classList.remove("popup-failure--show");
     popFailure.classList.add("popup-failure--closed");
     popOverlay.classList.remove("popup-overlay--show");
   }
