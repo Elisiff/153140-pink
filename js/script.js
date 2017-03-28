@@ -15,15 +15,17 @@ let popFailureBtn = document.querySelector (".popup-failure__btn");
 
 navMain.classList.remove("main-nav--nojs");
 
-navToggle.addEventListener("click", function() {
-  if (navMain.classList.contains("main-nav--closed")) {
-    navMain.classList.remove("main-nav--closed");
-    navMain.classList.add("main-nav--opened");
-  } else {
-    navMain.classList.add("main-nav--closed");
-    navMain.classList.remove("main-nav--opened");
-  }
-});
+if (navToggle !== null) {
+  navToggle.addEventListener("click", function() {
+    if (navMain.classList.contains("main-nav--closed")) {
+      navMain.classList.remove("main-nav--closed");
+      navMain.classList.add("main-nav--opened");
+    } else {
+      navMain.classList.add("main-nav--closed");
+      navMain.classList.remove("main-nav--opened");
+    }
+  });
+}
 
 // Слайдер с отзывами на десктопной версии
 if (reviewsArrowRight !== null) {
@@ -82,18 +84,22 @@ if (formSubmit !== null) {
   });
 }
 
-popSuccessBtn.addEventListener("click", function() {
-  if (popSuccess.classList.contains("popup-success--show")) {
-    popSuccess.classList.remove("popup-success--show");
-    popSuccess.classList.add("popup-success--closed");
-    popOverlay.classList.remove("popup-overlay--show");
-  }
-});
+if (popSuccessBtn !== null) {
+  popSuccessBtn.addEventListener("click", function() {
+    if (popSuccess.classList.contains("popup-success--show")) {
+      popSuccess.classList.remove("popup-success--show");
+      popSuccess.classList.add("popup-success--closed");
+      popOverlay.classList.remove("popup-overlay--show");
+    }
+  });
+}
 
-popFailureBtn.addEventListener("click", function() {
-  if (popFailure.classList.contains("popup-failure--show")) {
-    popFailure.classList.remove("popup-failure--show");
-    popFailure.classList.add("popup-failure--closed");
-    popOverlay.classList.remove("popup-overlay--show");
-  }
-});
+if (popFailureBtn !== null) {
+  popFailureBtn.addEventListener("click", function() {
+    if (popFailure.classList.contains("popup-failure--show")) {
+      popFailure.classList.remove("popup-failure--show");
+      popFailure.classList.add("popup-failure--closed");
+      popOverlay.classList.remove("popup-overlay--show");
+    }
+  });
+}
