@@ -8,15 +8,6 @@
 
 .post-item__photo {
   display: block;
-
-  &--panorama {
-
-    img {
-      margin: 0 auto;
-      width: 100%;
-      height: 137px;
-    }
-  }
 }
 
 .post-item__description {
@@ -84,14 +75,6 @@
       width: 100%;
       height: auto;
     }
-
-    &--panorama {
-
-      img {
-        width: 100%;
-        height: 509px;
-      }
-    }
   }
 
   .post-item__description {
@@ -137,7 +120,7 @@
       flex-direction: row;
       margin-top: 0;
       margin-bottom: 30px;
-      padding: 10px 8px 24px 27px;
+      padding: 8px 8px 24px 27px;
     }
 
     .post-item__post {
@@ -178,7 +161,7 @@
     margin-bottom: 53px;
 
     .post-item__description {
-      padding: 10px 8px 0px 27px;
+      padding: 8px 8px 0px 27px;
     }
 
     .post-item__likes {
@@ -192,13 +175,6 @@
       display: block;
       width: 100%;
       height: auto;
-    }
-  }
-
-  .post-item__photo--panorama {
-    img {
-      width: 100%;
-      height: 506px;
     }
   }
 }
