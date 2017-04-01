@@ -1,8 +1,4 @@
 .download {
-  background-color: $bg-header;
-}
-
-.download__container {
   margin: 0 auto;
   padding: 27px 20px 15px 20px;
   max-width: 280px;
@@ -79,19 +75,10 @@
 
 @media (min-width: 660px) {
   .download {
-    position: relative;
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  .download__container {
-    position: absolute;
-    bottom: 108px;
-    left: 0;
     min-width: 300px;
     padding: 2px 20px 2px 20px;
     background-color: transparent;
+    transform: translate(-160px, -267px);
   }
 
   .download__slogan {
@@ -114,18 +101,8 @@
 
 @media (min-width: 960px) {
   .download {
-    max-width: 940px;
-    margin: 0 auto;
     padding: 0 20px;
-  }
-
-  .download__container {
-    position: absolute;
-    bottom: 121px;
-    left: 0;
-    min-width: 300px;
-    padding: 0 20px;
-    background-color: transparent;
+    transform: translate(-321px, 216px);
   }
 
   .download__slogan {
