@@ -7,7 +7,8 @@
   margin-top: -70px;
 
   &--index {
-    height: 466px;
+    min-height: 736px;
+    background-size: 100% 466px;
   }
 
   &--other {
@@ -18,16 +19,18 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header {
-    background-image: url("../img/bg-back-mobile@2x.jpg")
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
 .page-header__container {
   position: relative;
   margin: 0 auto;
+  z-index: 0;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 280px;
+  height: 466px;
 
   &::after {
     content: "";
@@ -38,6 +41,7 @@
     height: 286px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -51,10 +55,15 @@
 
 @media (min-width: 660px) {
   .page-header {
-    background: url("../img/bg-back-tablet@1x.jpg") top center / cover no-repeat $bg-header;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: $bg-header;
+    background-size: cover;
     margin-top: -112px;
 
     &--index {
+      min-height: auto;
       height: 730px;
     }
 
@@ -66,7 +75,7 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header {
-      background: url("../img/bg-back-tablet@2x.jpg")
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
@@ -82,6 +91,7 @@
       height: 545px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-repeat: no-repeat;
+      background-position: bottom right;
     }
   }
 
@@ -96,7 +106,11 @@
 
 @media (min-width: 960px) {
   .page-header {
-    background: url("../img/bg-back-desktop@1x.jpg") top center / cover no-repeat $bg-header;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: $bg-header;
+    background-size: cover;
     margin-top: -110px;
 
     &--index {
@@ -111,7 +125,7 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header {
-      background: url("../img/bg-back-desktop@2x.jpg")
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
@@ -124,10 +138,11 @@
     &::after {
       top: 209px;
       left: 26px;
-      width: 940px;
+      width: 1050px;
       height: 645px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
-      background-position: bottom left;
+      background-position: bottom right;
+      background-size: 1050px auto;
     }
   }
 

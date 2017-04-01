@@ -75,7 +75,7 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .advantages__item--last::after {
-      background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-image: url("../img/iphone-screen-mobile@2x.png");
   }
 }
 
@@ -149,7 +149,7 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .advantages__item--last::after {
-        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
     }
   }
 }
@@ -237,15 +237,15 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .advantages__item::after {
-        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
     }
 
     .advantages__item--first::after {
-        background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
     }
 
     .advantages__item--last::after {
-        background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
     }
   }
 

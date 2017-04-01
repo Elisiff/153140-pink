@@ -21,32 +21,29 @@
   padding-left: 20px;
   padding-right: 20px;
   max-width: 280px;
+  overflow: hidden;
 }
 
 .price-list-btn {
   display: none;
 }
 
-.price-list__conditions {
-  display: none;
-}
-
-.price-list__slide {
-  display: none;
-  margin-left: -20px;
-  margin-right: -20px;
+.price-list__slider {
+  margin: 0 -40px;
   border-spacing: 0;
+  border-collapse: collapse;
+  width: 834px;
+  box-sizing: border-box;
+  transform: translateX(-238px);
 }
 
-.price-list__empty-header {
-  width: 20px;
-  font-size: 0;
-  background-color: $bg-nav;
+.price-list__options {
+  display: none;
 }
 
 .price-list__package {
   position: relative;
-  width: 145px;
+  width: 138px;
   padding: 17px 68px 20px 68px;
   text-align: center;
   background-color: $bg-nav;
@@ -77,8 +74,8 @@
     content: "";
     position: absolute;
     top: -6px;
-    left: -19px;
-    width: 74px;
+    left: -18px;
+    width: 73px;
     height: 73px;
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
@@ -88,15 +85,8 @@
   }
 }
 
-.price-list__empty-main {
-  width: 20px;
-  font-size: 0;
-  background-color: $bg-white;
-  border-bottom: 2px solid $table-b;
-}
-
 .price-list__condition {
-  padding: 15px 17px 14px 20px;
+  padding: 15px 16px 14px 21px;
   @include text($open, 14px, 30px, $text-gray);
   text-transform: uppercase;
   background-color: $bg-white;
@@ -121,16 +111,16 @@
   padding-top: 3px;
 }
 
-#price-list-btn-1:checked~.price-list__slide-1 {
-  display: block;
+#price-list-btn-1:checked~.price-list__slider {
+  transform: translateX(41px);
 }
 
-#price-list-btn-2:checked~.price-list__slide-2 {
-  display: block;
+#price-list-btn-2:checked~.price-list__slider {
+  transform: translateX(-237px);
 }
 
-#price-list-btn-3:checked~.price-list__slide-3 {
-  display: block;
+#price-list-btn-3:checked~.price-list__slider {
+  transform: translateX(-514px);
 }
 
 .price-list__slider-controls {
@@ -181,11 +171,10 @@
   }
 
   .price-list__container {
-    display: flex;
     margin-bottom: 0;
     padding-top: 100px;
     padding-right: 20px;
-    padding-bottom: 68px;
+    padding-bottom: 69px;
     max-width: 620px;
   }
 
@@ -193,55 +182,63 @@
     display: none;
   }
 
-  .price-list__conditions {
-    display: block;
-    width: 159px;
-    margin-left: 1px;
-    margin-top: 77px;
+  .price-list__slider {
+    margin: 0;
+    margin-left: 2px;
+    width: 620px;
     box-sizing: border-box;
-    border-spacing: 0;
+    transform: none;
+    overflow: visible;
+  }
+
+  .price-list__options {
+    display: table-cell;
+    width: 155px;
+    box-sizing: border-box;
+    padding: 6px 0 8px 16px;
     border-bottom: 2px solid $table-b;
     border-left: 2px solid $table-b;
     border-right: 2px solid $table-b;
     background-color: #ffffff;
-  }
-
-  .price-list__condition-full {
-    width: 160px;
-    min-height: 20px;
-    padding: 7px 5px 8px 14px;
     @include text($open, 14px, 30px, $text-gray);
-    background-color: $bg-white;
-    border-top: 2px solid $table-b;
+
+    &--hidden {
+      font-size: 0;
+      background-color: $bg-gray;
+      border-left: none;
+      border-right: none;
+    }
   }
 
-  .price-list__slide {
-    display: block;
-    width: 156px;
-    box-sizing: border-box;
-    margin: 0;
+  #price-list-btn-1:checked~.price-list__slider {
+    transform: none;
   }
 
-  .price-list__empty-header, .price-list__empty-main {
-    display: none;
+  #price-list-btn-2:checked~.price-list__slider {
+    transform: none;
   }
 
-  .price-list__condition {
-    display: none;
+  #price-list-btn-3:checked~.price-list__slider {
+    transform: none;
   }
 
   .price-list__package {
     position: relative;
-    width: 156px;
+    width: 155px;
     box-sizing: border-box;
     padding: 10px 0 9px 0;
     border-left: none;
     border-right: 2px solid $bg-gray;
+
+    &:last-child {
+      border-right: 2px solid $bg-nav;
+    }
   }
 
   .price-list__package-price {
     padding: 0;
     margin-top: 0;
+    @include text($open-l, 18px, 30px, $text-white);
   }
 
   .price-list__package-hit {
@@ -259,33 +256,33 @@
     }
   }
 
-  .price-list__slide-1 .price-list__package {
-    border-left: 2px solid $bg-nav;
-    box-shadow: -1px 0 0 $bg-nav;
-  }
-
-  .price-list__slide-3 .price-list__package {
-    border-right: 2px solid $bg-nav;
-  }
-
   .price-list__package-title {
     @include text($open-b, 16px, 30px, $text-white);
   }
 
-  .price-list__package-price {
-    margin: 0;
-    @include text($open-l, 18px, 30px, $text-white);
+  .price-list__condition {
+    width: 0;
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    border: none;
+
+    span {
+      display: none;
+    }
   }
 
   .price-list__icon {
-    height: 45px;
+    width: 155px;
+    box-sizing: border-box;
     padding: 0;
     border-right: 2px solid $table-b;
     border-bottom: 2px solid $table-b;
   }
 
   .price-list__logo {
-    margin-left: 63px;
+    margin-left: 62px;
   }
 }
 
@@ -299,41 +296,35 @@
   }
 
   .price-list__container {
-    padding-bottom: 94px;
+    padding-bottom: 96px;
     padding-top: 187px;
     padding-left: 10px;
     padding-right: 10px;
     max-width: 940px;
   }
 
-  .price-list__conditions {
-    width: 236px;
+  .price-list__slider {
     margin-left: 0;
-    margin-top: 96px;
-    background-color: #ffffff;
+    width: 940px;
   }
 
-  .price-list__condition-full {
-    width: 236px;
-    min-height: 20px;
-    padding: 15px 5px 15px 21px;
+  .price-list__options {
+    width: 235px;
+    padding: 15px 5px 14px 21px;
     @include text($open, 18px, 30px, $text-gray);
-  }
-
-  .price-list__slide {
-    display: block;
-    width: 236px;
-    box-sizing: border-box;
-    margin: 0;
   }
 
   .price-list__package {
     position: relative;
-    width: 236px;
+    width: 235px;
     box-sizing: border-box;
     padding: 16px 0 20px 0;
     border-left: none;
     border-right: 2px solid $bg-gray;
+
+    &:last-child {
+      border-right: 2px solid $bg-nav;
+    }
   }
 
   .price-list__package-hit {
@@ -360,7 +351,7 @@
   }
 
   .price-list__icon {
-    height: 60px;
+    width: 235px;
     padding: 0;
   }
 

@@ -89,28 +89,26 @@
           Pink — приложение для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </h1>
       </div>
+
+      <!-- Скачать приложение -->
+      <section class="download">
+        <p class="download__slogan">
+          Взгляните на жизнь иначе!
+        </p>
+        <a href="#" class="download__main-btn  btn">Скачать приложение</a>
+        <div class="download__btns">
+          <a href="#" class="download__btn  download__btn--iphone">iPhone</a>
+          <a href="#" class="download__btn  download__btn--android">Android</a>
+          <a href="#" class="download__btn  download__btn--win">Windows</a>
+        </div>
+        <p class="download__description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
     </header>
 
     <!-- Main -->
     <main class="page-main">
-
-      <!-- Скачать приложение -->
-      <section class="download">
-        <div class="download__container">
-          <p class="download__slogan">
-            Взгляните на жизнь иначе!
-          </p>
-          <a href="#" class="download__main-btn  btn">Скачать приложение</a>
-          <div class="download__btns">
-            <a href="#" class="download__btn  download__btn--iphone">iPhone</a>
-            <a href="#" class="download__btn  download__btn--android">Android</a>
-            <a href="#" class="download__btn  download__btn--win">Windows</a>
-          </div>
-          <p class="download__description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
-      </section>
 
       <!-- Преимущества -->
       <section class="advantages">
@@ -196,130 +194,76 @@
           <input class="price-list-btn" type="radio" id="price-list-btn-2" name="price-list-toggle" checked>
           <input class="price-list-btn" type="radio" id="price-list-btn-3" name="price-list-toggle">
 
-          <table class="price-list__conditions">
+          <table class="price-list__slider">
             <tr>
-              <td class="price-list__condition-full">Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td class="price-list__condition-full">Смайлики</td>
-            </tr>
-            <tr>
-              <td class="price-list__condition-full">Комментарии</td>
-            </tr>
-          </table>
-
-          <table class="price-list__slide  price-list__slide-1">
-            <tr>
-              <td class="price-list__empty-header"></td>
+              <td class="price-list__options  price-list__options--hidden"></td>
               <td class="price-list__package" colspan="2">
                 <b class="price-list__package-title">База</b>
                 <p class="price-list__package-price">1,99 USD</p>
               </td>
-              <td class="price-list__empty-header"></td>
-            </tr>
-            <tr>
-              <td class="price-list__empty-main"></td>
-              <td class="price-list__condition  price-list__condition--main">
-                <span>Розовый фильтр</span></td>
-              <td class="price-list__icon">
-                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
-              </td>
-              <td class="price-list__empty-main"></td>
-            </tr>
-            <tr>
-              <td class="price-list__empty-main"></td>
-              <td class="price-list__condition  price-list__condition--main">
-                Смайлики</td>
-              <td class="price-list__icon">
-                <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
-              </td>
-              <td class="price-list__empty-main"></td>
-            </tr>
-            <tr>
-              <td class="price-list__empty-main"></td>
-              <td class="price-list__condition  price-list__condition--main">
-                Комментарии</td>
-              <td class="price-list__icon">
-                <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
-              </td>
-              <td class="price-list__empty-main"></td>
-            </tr>
-          </table>
-
-          <table class="price-list__slide  price-list__slide-2">
-            <tr>
-              <td class="price-list__empty-header"></td>
               <td class="price-list__package" colspan="2">
                 <div class="price-list__package-hit">Хит</div>
                 <b class="price-list__package-title">Стандарт</b>
                 <p class="price-list__package-price">3,99 USD</p>
               </td>
-              <td class="price-list__empty-header"></td>
+              <td class="price-list__package" colspan="2">
+                <b class="price-list__package-title">Анлим</b>
+                <p class="price-list__package-price">9,99 USD</p>
+              </td>
             </tr>
             <tr>
-              <td class="price-list__empty-main"></td>
+              <td class="price-list__options">Розовый фильтр</td>
+              <td class="price-list__condition">
+                <span>Розовый фильтр</span></td>
+              <td class="price-list__icon">
+                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
+              </td>
               <td class="price-list__condition">
                 Розовый фильтр</td>
               <td class="price-list__icon">
                 <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
               </td>
-              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                Розовый фильтр</td>
+              <td class="price-list__icon">
+                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
+              </td>
             </tr>
             <tr>
-              <td class="price-list__empty-main"></td>
+              <td class="price-list__options">Смайлики</td>
+              <td class="price-list__condition">
+                Смайлики</td>
+              <td class="price-list__icon">
+                <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
+              </td>
               <td class="price-list__condition">
                 Смайлики</td>
               <td class="price-list__icon">
                 <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
               </td>
-              <td class="price-list__empty-main"></td>
+              <td class="price-list__condition">
+                Смайлики</td>
+              <td class="price-list__icon">
+                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
+              </td>
             </tr>
             <tr>
-              <td class="price-list__empty-main"></td>
+              <td class="price-list__options">Комментарии</td>
               <td class="price-list__condition">
                 Комментарии</td>
               <td class="price-list__icon">
                 <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
               </td>
-              <td class="price-list__empty-main"></td>
-            </tr>
-          </table>
-
-          <table class="price-list__slide  price-list__slide-3">
-            <tr>
-              <td class="price-list__empty-header"></td>
-              <td class="price-list__package" colspan="2">
-                <b class="price-list__package-title">Анлим</b>
-                <p class="price-list__package-price">9,99 USD</p>
-              </td>
-              <td class="price-list__empty-header"></td>
-            </tr>
-            <tr>
-              <td class="price-list__empty-main"></td>
               <td class="price-list__condition">
-                Розовый фильтр</td>
+                Комментарии</td>
               <td class="price-list__icon">
-                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
+                <img src="img/icon-no.svg" alt="Нет" class="price-list__logo" width="27" height="26">
               </td>
-              <td class="price-list__empty-main"></td>
-            </tr>
-            <tr>
-              <td class="price-list__empty-main"></td>
-              <td class="price-list__condition">
-                Смайлики</td>
-              <td class="price-list__icon">
-                <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
-              </td>
-              <td class="price-list__empty-main"></td>
-            </tr>
-            <tr>
-              <td class="price-list__empty-main"></td>
               <td class="price-list__condition">
                 Комментарии</td>
               <td class="price-list__icon">
                 <img src="img/icon-yes.svg" alt="Да" class="price-list__logo" width="31" height="21">
               </td>
-              <td class="price-list__empty-main"></td>
             </tr>
           </table>
 
@@ -338,23 +282,21 @@
         <p class="contacts-list__questions">
           Остались вопросы? Свяжитесь с нами!
         </p>
-        <ul class="contacts-list__wrapper">
-          <li class="contacts-list__contacts">
-            <b class="contacts-list__contact-title">Звоните:</b>
-            <p class="contacts-list__contact-description">+7 (812) 555-66-66</p>
-          </li>
-          <li class="contacts-list__contacts">
-            <b class="contacts-list__contact-title">Пишите:</b>
-            <p class="contacts-list__contact-description">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru
-              </a>
-            </p>
-          </li>
-          <li class="contacts-list__contacts">
-            <b class="contacts-list__contact-title">Приезжайте в гости:</b>
-            <p class="contacts-list__contact-description">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
+        <div class="contacts-list__contacts">
+          <b class="contacts-list__contact-title">Звоните:</b>
+          <p class="contacts-list__contact-description">+7 (812) 555-66-66</p>
+        </div>
+        <div class="contacts-list__contacts">
+          <b class="contacts-list__contact-title">Пишите:</b>
+          <p class="contacts-list__contact-description">
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru
+            </a>
+          </p>
+        </div>
+        <div class="contacts-list__contacts">
+          <b class="contacts-list__contact-title">Приезжайте в гости:</b>
+          <p class="contacts-list__contact-description">ул. Большая Конюшенная, 19/8</p>
+        </div>
       </section>
       <section class="map" id="yandex-map">
         <span class="map__marker"></span>
