@@ -18,7 +18,7 @@
     left: 0;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
-    background-size: 320px 35px;
+    background-size: 100% 35px;
     background-position: 50% 0;
   }
 }
@@ -51,7 +51,7 @@
     background-size: 700px auto;
 
     &::before {
-      background-size: 700px 70px;
+      background-size: 100% 70px;
       background-position: 50% 0;
     }
   }
@@ -80,7 +80,7 @@
     background-size: 1200px auto;
 
     &::before {
-      background-size: 1200px 103px;
+      background-size: 100% 103px;
       background-position: 50% 0;
     }
   }
